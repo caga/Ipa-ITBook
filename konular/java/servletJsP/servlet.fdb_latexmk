@@ -1,0 +1,14 @@
+# Fdb version 3
+["pdflatex"] 1520942327 "servlet.tex" "servlet.pdf" "servlet" 1520942327
+  "/etc/texmf/web2c/texmf.cnf" 1520239310 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1480098701 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1503024366 32036 8f10cb8f6ef259fb5791f09c065d3d13 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1503024366 32036 8f10cb8f6ef259fb5791f09c065d3d13 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1520258178 4130156 239bbd9e0999bf0653374b8aea054b3c ""
+  "servlet.aux" 1520942034 8 a94a2480d3289e625eea47cd1b285758 ""
+  "servlet.tex" 1520942326 1700 4d9c5feb299e5cf52fb7edc6df8ff5f9 ""
+  (generated)
+  "servlet.log"
+  "servlet.pdf"

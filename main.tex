@@ -60,7 +60,7 @@
 \coordinate [below=12cm] (midpoint) at (current page.north);
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{background}}; % Background image
+\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{./Pictures/forest/cover1}}; % Background image
 \draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Bilgi Teknolojileri Notları \\[15pt] % Book title
 {\Large Vim, Tmux, Linux, Java, Database, Web Development ve daha fazlası }\\[20pt] % Subtitle
 {\huge Çağatay Çakır }}}; % Author name
@@ -93,7 +93,7 @@
 
 %\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
 
-\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+\chapterimage{./Pictures/forest/fch_head1.png} % Table of contents heading image
 
 \pagestyle{empty} % No headers
 
@@ -113,11 +113,11 @@
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
 
-\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapterimage{./Pictures/forest/fch_head2.png} % Chapter heading image
 
 
-\input{./konular/tmux/tmux.tex}
-
+%\input{./konular/tmux/tmux.tex}
+\input{./konular/java/servletJsP/servlet.tex}
 %------------------------------------------------
 
 

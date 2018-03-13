@@ -1,0 +1,15 @@
+<web-app>
+	<servlet>
+		<servlet-name>bmi</servlet-name>
+		<servlet-class>com.stargate.BmiServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>bmi</servlet-name>
+		<url-pattern>/bmi</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
