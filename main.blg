@@ -1,9 +1,9 @@
 [0] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [0] Config.pm:357> INFO - Logfile is 'main.blg'
-[25] biber:303> INFO - === Çrş Mar 14, 2018, 11:51:10
-[37] Biber.pm:360> INFO - Reading 'main.bcf'
-[97] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
-[106] Utils.pm:164> WARN - The file 'main.bcf' does not contain any citations!
-[111] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[112] bbl.pm:712> INFO - Output to main.bbl
-[112] Biber.pm:110> INFO - WARNINGS: 1
+[35] biber:303> INFO - === Prş Mar 15, 2018, 14:43:30
+[49] Biber.pm:360> INFO - Reading 'main.bcf'
+[115] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[124] Utils.pm:164> WARN - The file 'main.bcf' does not contain any citations!
+[129] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[129] bbl.pm:712> INFO - Output to main.bbl
+[130] Biber.pm:110> INFO - WARNINGS: 1

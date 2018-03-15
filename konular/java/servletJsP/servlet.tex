@@ -39,3 +39,14 @@ Projemiz  MVC altyapısına uygun olarak biri karşılama diğeri sonuç sayfas�
 \end{figure}
 \lstinputlisting[label={list:bmi_index},caption={Index Sayfa Kodu},language={HTML},breaklines]{/home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/index.html}
 
+Giriş sayfasından gelen request objesini servletimiz içerisine yazdığımız kodlarla parse edebiliyoruz. Mesela Liste (\ref{list:servlet}) de 11. satırda name parametresini request objesinden çekip program içerisinde string olarak tanımladığımız yine name isimli bir değişkene atıyoruz. Aynı şekilde giriş (index) sayfasından request objesine yazılan diğer parametreleri de çekiyoruz. Burade dikkatinizi celb edecek bir şey belki double tipinde olan değişkenleri, mesela kilo, double olarak almak için Double wrap classının parsırını kullanmamız ki bu parser string den double a değişkeni dönüştürmemizi sağlıyor. Zira request objesinin içindeki ifadeler string veya char biçiminde. Bunları direkt atamak hataya sebep olacaktır.  
+
+\lstinputlisting[label={list:servlet},caption={Servlet Kodu},language={Java},breaklines]{/home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/java/com/stargate/BmiServlet.java}
+Çekilen parametreleri daha sonra Liste (\ref{list:bmi.java}) de görülen Java classına hesap için gönderiyoruz. 
+
+\lstinputlisting[label={list:bmi.java},caption={BMI Java Kodu},language={Java},breaklines]{/home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/java/com/stargate/BMI.java}
+
+Liste \ref{list:servlet} da, 17. satırda BMI dan alınan sonucu result stringine depoluyoruz, daha sonra bu result ı 19. satırda bir attribute olarak request objesine ekliyoruz. 18, 20 ve 21 no` lu satırlar debug için koyduğumuz shell ekranına verileri basan satırlar. 22 nolu satırda request objesini view kısmına yani result.jsp sayfamıza aktarmak için view objesi tanımlıyoruz. 23 nolu satırda ise bu objenin forward methodu ile eklemeler yaptığımız request ve response objelerini sayfaya aktarıyoruz.
+\lstinputlisting[label={list:result},caption={Sonuç Sayfa Kodu},breaklines]{/home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/result.jsp}
+
+

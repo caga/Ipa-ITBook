@@ -20,21 +20,39 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm,headsep=10pt,a4paper]{geometry} % Page margins
-%\usepackage{fontspec}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[turkish]{babel} % English language/hyphenation
 
-
+\usepackage{listings}
+%\usepackage{listingsutf8}
+\lstset{
+   % language=bash, %% Troque para PHP, C, Java, etc... bash é o padrão
+    basicstyle=\ttfamily\small,
+    numberstyle=\footnotesize,
+    numbers=left,
+    backgroundcolor=\color{gray!10},
+    frame=single,
+    tabsize=2,
+    rulecolor=\color{black!30},
+    title=\lstname,
+    escapeinside={\%*}{*)},
+    breaklines=true,
+    breakatwhitespace=true,
+    framextopmargin=2pt,
+    framexbottommargin=2pt,
+    inputencoding=utf8,
+    extendedchars=true,
+    literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {ö}{{\"o}}1 {Ö}{{\"O}}1 {ğ}{{\u g}}1 {Ğ}{{\u G}}1 {ş}{{\c s}}1 {Ş}{{\c S}}1 {ç}{{\c c}}1 {Ç}{{\c C}}1 {ı}{{\i}}1 {İ}{{\. I}}1 {ü}{{\"u}}1{Ü}{{\" U}}1 
+    ,
+}
 \usepackage{graphicx} % Required for including pictures
 
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
-\usepackage{listings}
 \usepackage{lipsum} % Inserts dummy text
 
+
 \usepackage{tikz} % Required for drawing custom shapes
-
-
 \usepackage{enumitem} % Customize lists
 
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
