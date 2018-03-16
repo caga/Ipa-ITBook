@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.5)  16 MAR 2018 10:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.5)  16 MAR 2018 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1425,9 +1425,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip152
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 500.
-Package hyperref Info: Option `breaklinks' set `true' on input line 500.
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 500.
+Package hyperref Info: Option `colorlinks' set `false' on input line 502.
+Package hyperref Info: Option `breaklinks' set `true' on input line 502.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 502.
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
@@ -1792,7 +1792,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
 Package csquotes Info: Input encoding change on input line 60.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) (/home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/web.xml)) [12]
+) (/home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/web.xml) [12])
 \tf@ptc=\write8
 \openout8 = `main.ptc'.
 
@@ -1809,13 +1809,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  38217 strings out of 492990
  703600 string characters out of 6135006
- 1303002 words of memory out of 5000000
+ 1301993 words of memory out of 5000000
  40841 multiletter control sequences out of 15000+600000
  633292 words of font info for 229 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,55p,10507b,3863s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 524446 bytes).
+Output written on main.pdf (13 pages, 524434 bytes).
 PDF statistics:
  343 PDF objects out of 1000 (max. 8388607)
  301 compressed objects within 4 object streams
