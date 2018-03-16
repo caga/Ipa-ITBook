@@ -515,6 +515,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/index.html
 INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/index.html
+INPUT Pictures//java/giris.png
+INPUT ./Pictures//java/giris.png
+INPUT ./Pictures//java/giris.png
 INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/java/com/stargate/BmiServlet.java
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -532,6 +535,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/result.jsp
 INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/result.jsp
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
+INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/web.xml
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/web.xml
+INPUT /home/cagatay/gitrepo/Ipa-ITBook/konular/java/projects/webProjects/webapp1/src/main/webapp/WEB-INF/web.xml
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
 OUTPUT main.ptc
 INPUT main.aux
 INPUT main.run.xml
