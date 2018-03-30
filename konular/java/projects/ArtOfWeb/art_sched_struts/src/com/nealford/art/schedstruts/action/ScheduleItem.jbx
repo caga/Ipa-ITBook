@@ -1,0 +1,11 @@
+[PropertyInfo]
+duration,int,false,false, , ,true,<default>
+eventType,String,false,false, , ,true,<default>
+start,String,false,false, , ,true,<default>
+text,String,false,false, , ,true,<default>
+id,int,false,false,id,id,true,<default>
+[IconNames]
+
+
+
+

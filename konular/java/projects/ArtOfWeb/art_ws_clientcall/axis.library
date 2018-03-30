@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>axis</fullname>
+  <class>
+    <path>[lib/axis/axis.jar]</path>
+    <path>[lib/axis/axis-ant.jar]</path>
+    <path>[lib/axis/commons-discovery.jar]</path>
+    <path>[lib/axis/commons-logging.jar]</path>
+    <path>[lib/axis/jaxrpc.jar]</path>
+    <path>[lib/axis/log4j-1.2.8.jar]</path>
+    <path>[lib/axis/saaj.jar]</path>
+    <path>[lib/axis/wsdl4j.jar]</path>
+  </class>
+  <lastmodsaved>1067646307371</lastmodsaved>
+</library>

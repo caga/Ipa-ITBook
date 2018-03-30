@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>commons-pool</fullname>
+  <class>
+    <path>[lib/pool/commons-pool.jar]</path>
+  </class>
+  <lastmodsaved>1067213793152</lastmodsaved>
+</library>

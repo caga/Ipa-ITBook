@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JBuilder XML Project-->
+<project>
+  <property category="generalFormatting" name="blockIndent" value="4"/>
+  <property category="generalFormatting" name="continuationIndent" value="8"/>
+  <property category="javaFormatting" name="EventStyle" value="0"/>
+  <property category="javaFormatting" name="alignMultilineAssign" value="1"/>
+  <property category="javaFormatting" name="alwaysClasses" value="1"/>
+  <property category="javaFormatting" name="arrayInitDataOnNewLine" value="0"/>
+  <property category="javaFormatting" name="blankLinesAfterClass" value="2"/>
+  <property category="javaFormatting" name="catchOnNewLine" value="0"/>
+  <property category="javaFormatting" name="createBrace" value="0"/>
+  <property category="javaFormatting" name="elseOnNewLine" value="0"/>
+  <property category="javaFormatting" name="extendsOnNewLine" value="0"/>
+  <property category="javaFormatting" name="finallyOnNewLine" value="0"/>
+  <property category="javaFormatting" name="implementsOnNewLine" value="0"/>
+  <property category="javaFormatting" name="indentCase" value="0"/>
+  <property category="javaFormatting" name="packagePrefixGroups" value="java;(blank line);javax;(blank line);(*)"/>
+  <property category="javaFormatting" name="packageThreshold" value="2"/>
+  <property category="javaFormatting" name="paramAlignThreshold" value="40"/>
+  <property category="javaFormatting" name="preservedBlankLinesInDecl" value="2"/>
+  <property category="javaFormatting" name="spaceBeforeLparen" value="0"/>
+  <property category="javaFormatting" name="whileOnNewLine" value="0"/>
+  <property category="javaFormatting" name="wrapAtColumn" value="68"/>
+  <property category="runtime" name="DefaultConfiguration" value="-1"/>
+  <property category="runtime.0" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+  <property category="runtime.0" name="ConfigurationName" value="Untitled Runtime Configuration"/>
+  <property category="runtime.0" name="RunnableType" value="com.borland.jbuilder.runtime.ServerRunner"/>
+  <property category="runtime.0" name="appserver.parameters" value=""/>
+  <property category="runtime.0" name="appserver.servername" value=""/>
+  <property category="runtime.0" name="appserver.vmparameters" value=""/>
+  <property category="runtime.0" name="jsp.launchuri" value="/customtags/Welcome.html"/>
+  <property category="runtime.0" name="jsprunner.launchuri" value="/customtags/Welcome.html"/>
+  <property category="runtime.0" name="server.arguments" value=""/>
+  <property category="runtime.0" name="server.disableServerClassTracing" value="0"/>
+  <property category="runtime.0" name="server.instance.name" value=""/>
+  <property category="runtime.0" name="server.name" value="Tomcat 4.1"/>
+  <property category="runtime.0" name="server.vmparameters" value=""/>
+  <property category="runtime.0" name="test.harness" value="com.borland.jbuilder.unittest.JBTestRunner"/>
+  <property category="serverservices" name="disabled.services" value="connector;jdatastore;sqlj"/>
+  <property category="serverservices" name="single.server.name" value="Tomcat 4.1"/>
+  <property category="sys" name="AuthorLabel" value="@author"/>
+  <property category="sys" name="BackupPath" value="bak"/>
+  <property category="sys" name="CheckStable" value="1"/>
+  <property category="sys" name="Company" value=""/>
+  <property category="sys" name="CompanyLabel" value="Company:"/>
+  <property category="sys" name="Copyright" value="Copyright (c) 2003"/>
+  <property category="sys" name="CopyrightLabel" value="Copyright:"/>
+  <property category="sys" name="DefaultPath" value="src"/>
+  <property category="sys" name="Description" value=""/>
+  <property category="sys" name="DescriptionLabel" value="Description:"/>
+  <property category="sys" name="DocPath" value="doc"/>
+  <property category="sys" name="ExcludeClassEnabled" value="0"/>
+  <property category="sys" name="IncludeTestPath" value="1"/>
+  <property category="sys" name="InstanceVisibility" value="2"/>
+  <property category="sys" name="JDK" value="java version 1.4.1_02-b06"/>
+  <property category="sys" name="LastTag" value="0"/>
+  <property category="sys" name="Libraries" value="Jakarta Request;Jakarta Session;JSTL;Tomcat 4.1 Servlet;mysql"/>
+  <property category="sys" name="MakeStable" value="0"/>
+  <property category="sys" name="OutPath" value="classes"/>
+  <property category="sys" name="SourcePath" value="src;test"/>
+  <property category="sys" name="TestPath" value="test"/>
+  <property category="sys" name="Title" value=""/>
+  <property category="sys" name="TitleLabel" value="Title:"/>
+  <property category="sys" name="Version" value="1.0"/>
+  <property category="sys" name="VersionLabel" value="@version"/>
+  <property category="sys" name="WorkingDirectory" value="."/>
+  <property category="team" name="ignorePath.0" value="Tomcat"/>
+  <property category="webapp" name="last.wizard" value="customtags"/>
+  <node name="customtags" type="WebContext">
+    <property category="archiving" name="archiverClass" value="com.borland.jbuilder.wizard.webapp.WarArchiver"/>
+    <property category="archiving" name="buildWithProject" value="0"/>
+    <property category="archiving" name="defaultLibraryState" value="3"/>
+    <property category="archiving" name="libraryStates.1" value="0:Tomcat 4.1 Servlet"/>
+    <property category="archiving" name="libraryStates.2" value="0:Servlet"/>
+    <property category="archiving" name="targetPath" value="customtags.war"/>
+    <property category="webapp" name="docroot" value="root"/>
+  </node>
+  <node name="Export to Ant" type="Ant">
+    <property category="archiving" name="buildWithProject" value="0"/>
+    <property category="export" name="target" value="exported-build.xml"/>
+  </node>
+  <file path="src/com/nealford/art/history/customtags/stl/AddDbPoolToApplication.java"/>
+  <file path="build-sample-data.xml"/>
+  <file path="build.xml"/>
+  <file path="eMotherEarth.sql"/>
+  <file path="root/WEB-INF/emotherearth.tld"/>
+  <file path="src/com/nealford/art/history/customtags/stl/HtmlSqlResult.java"/>
+  <file path="Readme.html"/>
+</project>

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<StartPage>
+  <Cocoon>
+    <MainTitle>
+      JBuilder and Cocoon in Action!
+    </MainTitle>
+    <MainDescription>
+      <Greeting>Seamlessly create, configure, test, and deploy Cocoon web applications from within the IDE!</Greeting>
+      <Para>Cocoon is tightly integrated with JBuilder allowing you to publish
+      your XML documents using Cocoon's servlet-based, Java publishing framework.
+      Because Cocoon is based on XSL stylesheets and XSLT transformation, it allows
+      complete separation of content and style, as well as allowing different
+      presentations of the same data. </Para>
+      <Para> Without ever having to leave JBuilder's IDE: </Para>
+      <FeatureList>
+        <FeatureListItems>
+          Start by using the Cocoon Web Application wizard to quickly create your XML web application.
+        </FeatureListItems>
+        <FeatureListItems>
+          Then, create, validate, and transform your individual XML and XSL pages using JBuilder's XML features.
+        </FeatureListItems>
+        <FeatureListItems>
+          When you are ready with your application, use the JBuilder XML editor to configure your Cocoon environment.
+        </FeatureListItems>
+        <FeatureListItems>
+          Launch the Cocoon framework through Web Run and test your application.
+        </FeatureListItems>
+        <FeatureListItems>
+          Finally, do a Make Project and deploy the generated cocoon.war.
+                This is done automatically when you invoke Web Run.
+        </FeatureListItems>
+      </FeatureList>
+    </MainDescription>
+  </Cocoon>
+
+  <OtherFeatures>
+    <Brief>
+      JBuilder provides a wide variety of features and tools for
+      working with XML.
+    </Brief>
+    <Feature>
+    <Title>
+      Generation and validation of XML
+    </Title>
+    <Description>
+      <Para>JBuilder provides the following
+        XML features for generating and validating XML documents: </Para>
+      <FeatureList>
+        <FeatureListItems>An editor with XML support and syntax highlighting.</FeatureListItems>
+        <FeatureListItems>Wizards for creating XML documents and DTDs.</FeatureListItems>
+        <FeatureListItems>An XML viewer for viewing XML documents in a
+               JavaScript, collapsible tree view.</FeatureListItems>
+        <FeatureListItems>Validation of XML using DTDs and schema.</FeatureListItems>
+      </FeatureList>
+
+    </Description>
+
+    </Feature>
+    <Feature>
+    <Title>
+      Presentation of XML
+    </Title>
+    <Description>
+      <Para>JBuilder provides the following
+        XML presentation features: </Para>
+      <FeatureList>
+        <FeatureListItems>A Cocoon wizard for creating an XML publishing
+               framework.</FeatureListItems>
+        <FeatureListItems>Transformation of XML documents using stylesheets.</FeatureListItems>
+
+        <FeatureListItems>Transform trace options for tracing the application of
+               the stylesheet.</FeatureListItems>
+      </FeatureList>
+    </Description>
+    </Feature>
+    <Feature>
+    <Title>
+      Programmatic manipulation of XML
+    </Title>
+    <Description>
+      <Para>JBuilder provides the following XML features
+        for manipulating XML programmatically: </Para>
+      <FeatureList>
+        <FeatureListItems>A SAX Handler wizard for creating a SAX parser to
+               manipulate your XML data.</FeatureListItems>
+        <FeatureListItems>Data binding with BorlandXML using DTDs.</FeatureListItems>
+        <FeatureListItems>Data binding with Castor using schemas.</FeatureListItems>
+        <FeatureListItems>Pre-defined libraries, such as JDOM, BorlandXML,
+               and Castor. </FeatureListItems>
+      </FeatureList>
+    </Description>
+    </Feature>
+    <Feature>
+    <Title>
+      Interfacing to business data in databases
+    </Title>
+    <Description>
+      <Para>JBuilder provides the following XML features
+        for interfacing with databases: </Para>
+      <FeatureList>
+        <FeatureListItems>XML-DBMS model-based components.</FeatureListItems>
+        <FeatureListItems>Template-based components. </FeatureListItems>
+        <FeatureListItems>Pre-defined libraries for the XML database components.</FeatureListItems>
+      </FeatureList>
+    </Description>
+    </Feature>
+    <Feature>
+    <Title>
+      XML documentation
+    </Title>
+    <Description>
+      <Para> See the XML Application Developer's Guide for documentation
+      and tutorials on JBuilder's XML features. Documentation for additional XML
+      resources are in the extras directory in the full JBuilder
+      installation.
+      </Para>
+    </Description>
+    </Feature>
+  </OtherFeatures>
+</StartPage>

@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>
+Add Schedule Item
+</TITLE>
+</HEAD>
+<BODY>
+<H3>Add New Schedule Entry</H3>
+
+<form jwcid="form">
+
+<font color='red'>
+<span jwcid="foreachError">
+    <span jwcid="error" /><br>
+</span>
+</font>
+<table>
+    <tr>
+        <td>Start:</td>
+        <td><span jwcid="startDate"/></td>
+    </tr>
+    <tr>
+        <td>Event Type:</td>
+        <td><span jwcid="eventType"/></td>
+    </tr>
+    <tr>
+        <td>Duration:</td>
+        <td><span jwcid="duration"/></td>
+    </tr>
+    <tr>
+        <td>Description:</td>
+        <td><span jwcid="text"/></td>
+    </tr>
+    <tr><td>&nbsp;</td><td>
+    <input type="submit" jwcid="addSubmit" value="Add Item"/>
+    </td></tr>
+
+</table>
+</form>
+
+</BODY>
+</HTML>

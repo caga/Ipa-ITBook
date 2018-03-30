@@ -1,0 +1,70 @@
+<Planets>
+<Planet Rings="no">
+    <Name>Venus</Name>
+    <Diameter Units="km">12104</Diameter>
+    <Mean-Orbital-Velocity Units="km/sec">
+        35.03
+    </Mean-Orbital-Velocity>
+    <Rotation-Period Units="Earth days">
+        -243
+    </Rotation-Period>
+    <Gravity>0.9</Gravity>
+    <Escape-Velocity Units="km/sec">
+        10.36
+    </Escape-Velocity>
+</Planet>
+
+<Planet Rings="no">
+    <Name>Earth</Name>
+    <Diameter Units="km">12756</Diameter>
+    <Mean-Orbital-Velocity Units="km/sec">
+        29.79
+    </Mean-Orbital-Velocity>
+    <Rotation-Period Units="Earth days">
+        1
+    </Rotation-Period>
+    <Gravity>1.0</Gravity>
+    <Escape-Velocity Units="km/sec">
+        11.18
+    </Escape-Velocity>
+    <Moon><Name>Moon</Name></Moon>
+</Planet>
+
+
+<Planet Rings="yes">
+    <Name>Uranus</Name>
+    <Diameter Units="km">51118</Diameter>
+    <Mean-Orbital-Velocity Units="km/sec">
+        6.81
+    </Mean-Orbital-Velocity>
+    <Rotation-Period Units="Earth days">
+        -0.72
+    </Rotation-Period>
+    <Gravity>0.89</Gravity>
+    <Escape-Velocity Units="km/sec">
+        21.29
+    </Escape-Velocity>
+    <Moon><Name>Cordelia</Name></Moon>
+    <Moon><Name>Ophelia</Name></Moon>
+    <Moon><Name>Bianca</Name></Moon>
+    <Moon><Name>Cressida</Name></Moon>
+    <Moon><Name>Desdemona</Name></Moon>
+    <Moon><Name>Juliet</Name></Moon>
+    <Moon><Name>Portia</Name></Moon>
+    <Moon><Name>Rosalind</Name></Moon>
+    <Moon><Name>Belinda</Name></Moon>
+    <Moon><Name>Puck</Name></Moon>
+    <Moon><Name>Miranda</Name></Moon>
+    <Moon><Name>Ariel</Name></Moon>
+    <Moon><Name>Umbriel</Name></Moon>
+    <Moon><Name>Titania</Name></Moon>
+    <Moon><Name>Oberon</Name></Moon>
+    <Moon><Name>Caliban</Name></Moon>
+    <Moon><Name>Sycorax</Name></Moon>
+    <Moon><Name>Prospero</Name></Moon>
+    <Moon><Name>Setebos</Name></Moon>
+    <Moon><Name>Stephano</Name></Moon>
+    <Moon><Name>1986 U 10</Name></Moon>
+
+</Planet>
+</Planets>

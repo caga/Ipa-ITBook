@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="rebuild" name="art_sched_cocoon.jpx">
+  <property name="database.admin.name" value="root"/>
+  <property name="database.admin.password" value="marathon"/>
+  <property name="dest" value="classes.ant"/>
+  <property name="servlet2.3.home" value="lib/servlet"/>
+  <property name="ixbeans.home" value="lib/ixbeans"/>
+  <property name="mysql.home" value="lib/mysql"/>
+  <property name="data_express.home" value="lib/dataexpress"/>
+  <property name="src" value="src"/>
+  <property name="war-file-name" value="sched-ixbeansjsp.war" />
+  <path id="project.class.path">
+    <pathelement location="${dest}"/>
+    <pathelement location="${servlet2.3.home}/servlet.jar"/>
+    <pathelement location="${ixbeans.home}/internetbeans.jar"/>
+    <pathelement location="${mysql.home}/mysql-connector-java-3.0.8-stable-bin.jar"/>
+    <pathelement location="${data_express.home}/dx.jar"/>
+    <pathelement location="${data_express.home}/beandt.jar"/>
+    <pathelement location="${java.home}/lib/rt.jar"/>
+  </path>
+
+  <!--Patternset to exclude files from the output directory:-->
+  <patternset id="dest.exclude">
+    <exclude name="Temporary_Files/"/>
+    <exclude name="Generated Source/"/>
+    <exclude name="package cache/"/>
+    <exclude name="dependency cache/"/>
+    <exclude name="jsp cache/"/>
+  </patternset>
+
+    <target name="to-run-this-sample" depends="init" >
+        <echo>
+        To run this sample, deploy the WAR file to a servlet engine and use
+        the URI
+
+                http://&lt;server-name&gt;:&lt;port-number&gt;/sched-ixbeans/ViewSchedule.jsp
+
+
+        For example, if you are using TomCat:
+
+                http://localhost:8080/sched-ixbeans/ViewSchedule.jsp
+
+
+        See the sample's Readme.html for more information.
+        </echo>
+    </target>
+
+
+  <target name="war">
+    <war compress="false" destfile="${war-file-name}" webxml="root/WEB-INF/web.xml">
+      <fileset dir="root">
+        <include name="**/*.aiff"/>
+        <include name="**/*.asf"/>
+        <include name="**/*.asp"/>
+        <include name="**/*.asx"/>
+        <include name="**/*.au"/>
+        <include name="**/*.chtml"/>
+        <include name="**/*.class"/>
+        <include name="**/*.codestyle"/>
+        <include name="**/*.css"/>
+        <include name="**/*.dbxmi"/>
+        <include name="**/*.ear"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.htm"/>
+        <include name="**/*.html"/>
+        <include name="**/*.jar"/>
+        <include name="**/*.jnlp"/>
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.js"/>
+        <include name="**/*.jsp"/>
+        <include name="**/*.library"/>
+        <include name="**/*.mapxmi"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.png"/>
+        <include name="**/*.ram"/>
+        <include name="**/*.rar"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.schxmi"/>
+        <include name="**/*.shtml"/>
+        <include name="**/*.tblxmi"/>
+        <include name="**/*.tld"/>
+        <include name="**/*.war"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.wml"/>
+        <include name="**/*.xmi"/>
+        <include name="**/*.xml"/>
+        <include name="**/*.zip"/>
+        <exclude name="WEB-INF/"/>
+      </fileset>
+      <fileset dir="root">
+        <exclude name="WEB-INF/web.xml"/>
+        <include name="WEB-INF/*.*"/>
+      </fileset>
+      <lib dir="${servlet2.3.home}">
+        <include name="servlet.jar"/>
+      </lib>
+      <lib dir="${ixbeans.home}">
+        <include name="internetbeans.jar"/>
+      </lib>
+      <lib dir="${mysql.home}">
+        <include name="mysql-connector-java-3.0.8-stable-bin.jar"/>
+      </lib>
+      <lib dir="${data_express.home}">
+        <include name="dx.jar"/>
+        <include name="beandt.jar"/>
+      </lib>
+    </war>
+  </target>
+
+  <target name="cleanup">
+    <delete file="${war-file-name}"/>
+    <delete failonerror="false" includeemptydirs="true">
+      <fileset dir="${dest}"/>
+    </delete>
+  </target>
+
+  <target name="javadoc"/>
+
+  <target depends="cleanup" name="clean"/>
+
+  <target depends="war,javadoc" name="package"/>
+
+  <target name="deploy"/>
+
+  <target depends="package,deploy, to-run-this-sample" name="make"/>
+
+  <target depends="clean,make" name="rebuild"/>
+
+  <target name="init">
+    <mkdir dir="${dest}"/>
+  </target>
+
+    <target name="setup-sample-database">
+        <ant antfile="build-sample-data.xml" dir="." target="setup-sample-database" />
+    </target>
+
+
+</project>

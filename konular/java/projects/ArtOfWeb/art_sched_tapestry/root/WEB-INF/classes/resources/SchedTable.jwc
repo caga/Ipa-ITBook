@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE component-specification PUBLIC
+        "-//Howard Lewis Ship//Tapestry Specification 1.3//EN"
+        "http://tapestry.sf.net/dtd/Tapestry_1_3.dtd">
+
+<component-specification
+        class="com.nealford.art.schedtapestry.component.SchedTable"
+        allow-body="no" allow-informal-parameters="yes">
+
+    <component id="table" type="contrib:Table">
+        <binding name="tableModel" expression="tableModel"/>
+    </component>
+
+</component-specification>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>saveentry</servlet-name>
+    <servlet-class>com.nealford.art.mvcsched.controller.SaveEntry</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>scheduleentry</servlet-name>
+    <servlet-class>com.nealford.art.mvcsched.controller.ScheduleEntry</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>viewschedule</servlet-name>
+    <servlet-class>com.nealford.art.mvcsched.controller.ViewSchedule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>saveentry</servlet-name>
+    <url-pattern>/saveentry</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>scheduleentry</servlet-name>
+    <url-pattern>/scheduleentry</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>viewschedule</servlet-name>
+    <url-pattern>/viewschedule</url-pattern>
+  </servlet-mapping>
+  <taglib>
+    <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+    <taglib-location>/WEB-INF/c.tld</taglib-location>
+  </taglib>
+</web-app>

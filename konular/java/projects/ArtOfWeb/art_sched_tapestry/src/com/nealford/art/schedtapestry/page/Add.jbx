@@ -1,0 +1,11 @@
+[PropertyInfo]
+startDate,String,false,false,startDate,startDate,true,<default>
+duration,int,false,false,duration,duration,true,<default>
+eventType,String,false,false,eventType,eventType,true,<default>
+description,String,false,false,description,description,true,<default>
+errors,java.util.List,false,false,errors,errors,true,<default>
+[IconNames]
+
+
+
+

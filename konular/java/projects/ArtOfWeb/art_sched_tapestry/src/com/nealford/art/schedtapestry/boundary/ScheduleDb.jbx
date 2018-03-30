@@ -1,0 +1,13 @@
+[PropertyInfo]
+connection,Connection,false,false, , ,false,<default>
+eventTypes,Map,false,false, , ,true,<default>
+list,List,false,false, , ,true,<default>
+driverClass,String,false,false,driverClass,driverClass,true,<default>
+dbUrl,String,false,false,dbUrl,dbUrl,true,<default>
+user,String,false,false,user,user,true,<default>
+password,String,false,false,password,password,true,<default>
+[IconNames]
+
+
+
+

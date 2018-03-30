@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>
+Schedule Items
+</TITLE>
+</HEAD>
+<BODY>
+<p><h2>Schedule List</h2></p>
+<table border="2">
+    <tr bgcolor="yellow">
+        #foreach ($columnHead in $columnHeaders)
+            <th>$columnHead</th>
+        #end
+    </tr>
+    <tr>
+    #foreach ($scheduleItem in $scheduleList)
+    <TR>
+        <TD>$scheduleItem.Start</TD>
+        <TD align="center">$scheduleItem.Duration</TD>
+        <TD>$scheduleItem.Text</TD>
+        <TD>$scheduleItem.EventType</TD>
+    </TR>
+    #end
+</table>
+<p>
+<a href="scheduleentry">Add New Schedule Item</a>
+</BODY>
+</HTML>

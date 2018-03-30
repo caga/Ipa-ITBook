@@ -1,0 +1,25 @@
+.label 
+{ 
+  font-style: italic
+} 
+
+.errorLabel 
+{ 
+  color: red; font-style: italic
+} 
+
+.errorMessage 
+{ 
+  color: red; 
+  font-weight: bold; 
+  text-align: center
+} 
+
+.checkboxLabel 
+{
+}
+
+.checkboxErrorLabel 
+{ 
+  color: red 
+} 

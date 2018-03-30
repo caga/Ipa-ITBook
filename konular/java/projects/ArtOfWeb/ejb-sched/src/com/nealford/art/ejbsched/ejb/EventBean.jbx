@@ -1,0 +1,12 @@
+[PropertyInfo]
+description,String,false,false, , ,false,<default>
+duration,int,false,false, , ,false,<default>
+entityContext,EntityContext,false,false, , ,true,<default>
+eventKey,int,false,false, , ,false,<default>
+eventType,int,false,false, , ,false,<default>
+start,String,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

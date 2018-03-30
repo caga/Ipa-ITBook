@@ -1,0 +1,9 @@
+[PropertyInfo]
+eventTypes,Map,false,false, , ,true,<default>
+list,List,false,false, , ,true,<default>
+dataSource,javax.sql.DataSource,false,false,dataSource,dataSource,true,<default>
+[IconNames]
+
+
+
+

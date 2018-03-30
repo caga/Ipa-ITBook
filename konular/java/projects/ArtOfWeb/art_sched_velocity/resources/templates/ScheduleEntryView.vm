@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<TITLE>
+Add Schedule Item
+</TITLE>
+</HEAD>
+<BODY>
+<H3>
+Add New Schedule Entry
+</H3>
+#if ($errors)
+    <hr>
+    <b><u>Validation Errors</u></b><br>
+    <font color="red">
+    #foreach ($error in $errors)
+        $error <br>
+    #end
+    </font>
+    <hr>
+#end
+<form action="saveentry" method="post">
+<table border="0" width="30%" align="left">
+    <tr>
+        <th align="right">Duration</th>
+        <td align="left">
+        <input name="duration" size="16"
+               value="$scheduleItem.Duration">
+        </td>
+    </tr>
+    <tr>
+        <th align="right">Event Type</th>
+        <td align="left">
+        <select name="eventTypeKey"
+                value="$scheduleItem.EventTypeKey" >
+            #foreach ($key in $eventTypes.keySet())
+                #set ($eventType = $eventTypes.get($key))
+                <option value="$key"
+                #if ($key == $scheduleItem.EventTypeKey)
+                    "selected"
+                #end
+                >$eventType</option>
+            #end
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <th align="right">Start</th>
+        <td align="left">
+        <input name="start" size="16" value="$scheduleItem.Start"/>
+        </td>
+    </tr>
+    <tr>
+        <th align="right">Description</th>
+        <td align="left">
+        <input name="text" size="16" value="$scheduleItem.Text"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+        <input type="submit" name="Submit" value="Submit">
+        </td>
+        <td align="right">
+        <input type="reset" value="Reset">
+        </td>
+    </tr>
+</table>
+</form>
+
+</BODY>
+</HTML>

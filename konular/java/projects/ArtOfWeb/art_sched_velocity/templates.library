@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>templates</fullname>
+  <class>
+    <path>[root/WEB-INF/lib/templates.jar]</path>
+  </class>
+  <lastmodsaved>1067616004026</lastmodsaved>
+</library>

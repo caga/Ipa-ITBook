@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE form-validation PUBLIC
+"-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN"
+"http://jakarta.apache.org/commons/dtds/validator_1_0.dtd">
+
+<form-validation>
+    <formset>
+        <form    name="scheduleItem">
+        <field   property="duration"
+                 depends="required,integer,intRange">
+                    <arg0 key="prompt.duration"/>
+                    <arg1 name="intRange"
+                          key="${var:min}" resource="false"/>
+                    <arg2 name="intRange"
+                          key="${var:max}" resource="false"/>
+                    <var>
+                        <var-name>min</var-name>
+                        <var-value>0</var-value>
+                    </var>
+                    <var>
+                        <var-name>max</var-name>
+                        <var-value>31</var-value>
+                    </var>
+        </field>
+        <field   property="text"
+                 depends="required,minlength">
+                    <arg0 key="prompt.text"/>
+                    <arg1 name="minlength"
+                          key="${var:minlength}" resource="false"/>
+                    <var>
+                        <var-name>minlength</var-name>
+                        <var-value>0</var-value>
+                    </var>
+        </field>
+        </form>
+    </formset>
+</form-validation>

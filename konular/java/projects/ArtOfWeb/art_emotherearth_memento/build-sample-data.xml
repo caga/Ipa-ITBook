@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project basedir="." default="rebuild" name="art.emother.servlet.jpx">
+
+    <target name="setup-sample-database">
+        <sql
+            driver="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://localhost/"
+            userid="${database.admin.name}"
+            password="${database.admin.password}"
+            classpath="./lib/mysql/mysql-connector-java-3.0.8-stable-bin.jar"
+            src="eMotherEarth.sql"
+        />
+    </target>
+
+</project>

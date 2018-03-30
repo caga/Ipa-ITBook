@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 1.1//EN" "http://java.sun.com/j2ee/dtds/ejb-jar_1_1.dtd">
+<ejb-jar>
+    <enterprise-beans>
+        <session>
+            <ejb-name>ScheduleItemRules</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.ScheduleItemRulesHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.ScheduleItemRules</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.ScheduleItemRulesBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>EventTypeDB</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.EventTypeDBHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.EventTypeDB</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.EventTypeDBBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>EventDb</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.EventDbHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.EventDb</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.EventDbBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <entity>
+            <ejb-name>Event</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.EventHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.Event</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.EventBean</ejb-class>
+            <persistence-type>Bean</persistence-type>
+            <prim-key-class>com.nealford.art.ejbsched.ejb.EventPk</prim-key-class>
+            <reentrant>False</reentrant>
+        </entity>
+    </enterprise-beans>
+    <assembly-descriptor>
+        <container-transaction>
+            <method>
+                <ejb-name>EventTypeDB</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <method>
+                <ejb-name>EventDb</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <method>
+                <ejb-name>Event</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <trans-attribute>Required</trans-attribute>
+        </container-transaction>
+    </assembly-descriptor>
+</ejb-jar>

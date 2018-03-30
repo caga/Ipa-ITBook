@@ -1,0 +1,33 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from OrderInfoService WSDL service -->
+
+  <service name="OrderStatus" provider="java:RPC" style="rpc" use="encoded">
+      <parameter name="wsdlTargetNamespace" value="http://localhost:8080/emotherearth/services/OrderStatus"/>
+      <parameter name="wsdlServiceElement" value="OrderInfoService"/>
+      <parameter name="wsdlServicePort" value="OrderStatus"/>
+      <parameter name="className" value="localhost.emotherearth.services.OrderStatus.OrderStatusSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="OrderInfo"/>
+      <operation name="getWsDescription" qname="operNS:getWsDescription" xmlns:operNS="http://ws.emotherearth.art.nealford.com" returnQName="getWsDescriptionReturn" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" >
+      </operation>
+      <operation name="getOrderStatus" qname="operNS:getOrderStatus" xmlns:operNS="http://ws.emotherearth.art.nealford.com" returnQName="getOrderStatusReturn" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" >
+        <parameter name="orderKey" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getShippingStatus" qname="operNS:getShippingStatus" xmlns:operNS="http://ws.emotherearth.art.nealford.com" returnQName="getShippingStatusReturn" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" >
+        <parameter name="orderKey" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="getWsDescription getShippingStatus getOrderStatus"/>
+      <parameter name="scope" value="Request"/>
+
+  </service>
+</deployment>

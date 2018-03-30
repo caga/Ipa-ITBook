@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<descriptors>
+  <ejb-jar.xml extralocation="" timestamp="1030411565707"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 1.1//EN" "http://java.sun.com/j2ee/dtds/ejb-jar_1_1.dtd">
+<ejb-jar>
+    <enterprise-beans>
+        <session>
+            <ejb-name>ScheduleItemRules</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.ScheduleItemRulesHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.ScheduleItemRules</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.ScheduleItemRulesBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>EventTypeDB</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.EventTypeDBHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.EventTypeDB</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.EventTypeDBBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>EventDb</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.EventDbHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.EventDb</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.EventDbBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <entity>
+            <ejb-name>Event</ejb-name>
+            <home>com.nealford.art.ejbsched.ejb.EventHome</home>
+            <remote>com.nealford.art.ejbsched.ejb.Event</remote>
+            <ejb-class>com.nealford.art.ejbsched.ejb.EventBean</ejb-class>
+            <persistence-type>Bean</persistence-type>
+            <prim-key-class>com.nealford.art.ejbsched.ejb.EventPk</prim-key-class>
+            <reentrant>False</reentrant>
+            <cmp-field>
+                <field-name>start</field-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>duration</field-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>text</field-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>eventType</field-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>eventKey</field-name>
+            </cmp-field>
+        </entity>
+    </enterprise-beans>
+    <assembly-descriptor>
+        <container-transaction>
+            <method>
+                <ejb-name>EventTypeDB</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <method>
+                <ejb-name>EventDb</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <method>
+                <ejb-name>Event</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <trans-attribute>Required</trans-attribute>
+        </container-transaction>
+    </assembly-descriptor>
+</ejb-jar>]]></ejb-jar.xml>
+  <ejb-inprise.xml extralocation="" timestamp="1030411565707"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inprise-specific PUBLIC "-//Inprise Corporation//DTD Enterprise JavaBeans 1.1//EN" "http://www.borland.com/devsupport/appserver/dtds/ejb-inprise.dtd">
+<inprise-specific>
+    <enterprise-beans>
+        <session>
+            <ejb-name>ScheduleItemRules</ejb-name>
+            <bean-home-name>ScheduleItemRules</bean-home-name>
+        </session>
+        <session>
+            <ejb-name>EventTypeDB</ejb-name>
+            <bean-home-name>EventTypeDB</bean-home-name>
+        </session>
+        <session>
+            <ejb-name>EventDb</ejb-name>
+            <bean-home-name>EventDb</bean-home-name>
+        </session>
+        <entity>
+            <ejb-name>Event</ejb-name>
+            <bean-home-name>Event</bean-home-name>
+            <cmp-info>
+                <database-map>
+                    <column-map>
+                        <field-name>start</field-name>
+                    </column-map>
+                    <column-map>
+                        <field-name>duration</field-name>
+                    </column-map>
+                    <column-map>
+                        <field-name>text</field-name>
+                    </column-map>
+                    <column-map>
+                        <field-name>eventType</field-name>
+                    </column-map>
+                    <column-map>
+                        <field-name>eventKey</field-name>
+                    </column-map>
+                </database-map>
+            </cmp-info>
+        </entity>
+    </enterprise-beans>
+    <datasource-definitions>
+        <datasource>
+            <jndi-name>MySQLDS</jndi-name>
+            <url>jdbc:mysql://localhost/schedule</url>
+            <username>root</username>
+            <password>marathon</password>
+            <driver-class-name>org.gjt.mm.mysql.Driver</driver-class-name>
+        </datasource>
+    </datasource-definitions>
+</inprise-specific>]]></ejb-inprise.xml>
+</descriptors>

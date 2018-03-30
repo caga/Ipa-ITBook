@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>Jakarta Session</fullname>
+  <class>
+    <path>[lib/session/taglibs-session.jar]</path>
+  </class>
+  <lastmodsaved>1061678673330</lastmodsaved>
+</library>

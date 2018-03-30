@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "art_emotherearth_ws", "art_emotherearth_ws.csproj", "{7FF6D7A6-310F-4983-884D-7EF4D3491407}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7FF6D7A6-310F-4983-884D-7EF4D3491407}.Debug.ActiveCfg = Debug|.NET
+		{7FF6D7A6-310F-4983-884D-7EF4D3491407}.Debug.Build.0 = Debug|.NET
+		{7FF6D7A6-310F-4983-884D-7EF4D3491407}.Release.ActiveCfg = Release|.NET
+		{7FF6D7A6-310F-4983-884D-7EF4D3491407}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

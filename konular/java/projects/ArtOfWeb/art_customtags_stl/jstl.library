@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>jstl</fullname>
+  <class>
+    <path>[lib/jstl/jstl.jar]</path>
+    <path>[lib/jstl/standard.jar]</path>
+  </class>
+  <lastmodsaved>1066772549798</lastmodsaved>
+</library>

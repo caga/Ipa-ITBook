@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>Art of Web Development Custom Tags</shortname>
+  <uri>http://com.nealford.art.emotherearth</uri>
+
+  <tag>
+    <name>addDbPoolToApplication</name>
+    <tagclass>
+        com.nealford.art.history.customtags.stl.AddDbPoolToApplication
+    </tagclass>
+    <teiclass>
+        com.nealford.art.history.customtags.stl.AddDbPoolTagExtraInfo
+    </teiclass>
+    <bodycontent>empty</bodycontent>
+    <attribute>
+      <name>initUserName</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>initPasswordName</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>initUrlName</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>initDriverClassName</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>htmlSqlResult</name>
+    <tagclass>
+        com.nealford.art.history.customtags.stl.HtmlSqlResult
+    </tagclass>
+    <bodycontent>empty</bodycontent>
+    <attribute>
+      <name>sql</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>dbPool</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>formActionDestination</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>shoppingForm</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+
+</taglib>

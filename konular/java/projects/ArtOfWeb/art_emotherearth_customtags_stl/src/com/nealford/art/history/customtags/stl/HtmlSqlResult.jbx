@@ -1,0 +1,10 @@
+[PropertyInfo]
+connection,String,false,false, , ,true,<default>
+formActionDestination,String,false,false,formActionDestination,formActionDestination,true,<default>
+shoppingForm,boolean,false,false, , ,true,<default>
+sql,String,false,false,Sql,Sql,true,<default>
+[IconNames]
+
+
+
+

@@ -1,0 +1,29 @@
+<jaws>
+    <enterprise-beans>
+        <entity>
+            <ejb-name>Event</ejb-name>
+            <table-name>event</table-name>
+            <create-table>false</create-table>
+            <cmp-field>
+                <field-name>eventKey</field-name>
+                <column-name>event_key</column-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>start</field-name>
+                <column-name>start</column-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>duration</field-name>
+                <column-name>duration</column-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>description</field-name>
+                <column-name>description</column-name>
+            </cmp-field>
+            <cmp-field>
+                <field-name>eventType</field-name>
+                <column-name>event_type</column-name>
+            </cmp-field>       
+        </entity>
+    </enterprise-beans>      
+</jaws>    

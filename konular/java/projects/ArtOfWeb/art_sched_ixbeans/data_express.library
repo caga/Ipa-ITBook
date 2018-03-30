@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>data_express</fullname>
+  <class>
+    <path>[lib/dataexpress/dx.jar]</path>
+    <path>[lib/dataexpress/beandt.jar]</path>
+  </class>
+  <lastmodsaved>1067549371531</lastmodsaved>
+</library>

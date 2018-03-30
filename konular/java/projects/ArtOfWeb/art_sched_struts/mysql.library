@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>mysql</fullname>
+  <class>
+    <path>[lib/mysql/mysql-connector-java-2.0.14-bin.jar]</path>
+  </class>
+  <lastmodsaved>1062852190970</lastmodsaved>
+</library>

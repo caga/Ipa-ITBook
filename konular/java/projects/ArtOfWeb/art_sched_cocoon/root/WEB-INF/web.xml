@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>Cocoon2</servlet-name>
+    <display-name>Cocoon2</display-name>
+    <description>The main Cocoon2 servlet</description>
+    <servlet-class>org.apache.cocoon.servlet.ParanoidCocoonServlet</servlet-class>
+    <init-param>
+      <param-name>servlet-logger</param-name>
+      <param-value>access</param-value>
+    </init-param>
+    <init-param>
+      <param-name>load-class</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>cocoon-logger</param-name>
+      <param-value>core</param-value>
+    </init-param>
+    <init-param>
+      <param-name>init-classloader</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <init-param>
+      <param-name>configurations</param-name>
+      <param-value>/WEB-INF/cocoon.xconf</param-value>
+    </init-param>
+    <init-param>
+      <param-name>request-factory</param-name>
+      <param-value>org.apache.cocoon.components.request.MultipartRequestFactoryImpl</param-value>
+    </init-param>
+    <init-param>
+      <param-name>log-level</param-name>
+      <param-value>DEBUG</param-value>
+    </init-param>
+    <init-param>
+      <param-name>logkit-config</param-name>
+      <param-value>/WEB-INF/logkit.xconf</param-value>
+    </init-param>
+    <init-param>
+      <param-name>allow-reload</param-name>
+      <param-value>yes</param-value>
+    </init-param>
+    <init-param>
+      <param-name>manage-exceptions</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cocoon2</servlet-name>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Cocoon2</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <mime-mapping>
+    <extension>css</extension>
+    <mime-type>text/css</mime-type>
+  </mime-mapping>
+</web-app>

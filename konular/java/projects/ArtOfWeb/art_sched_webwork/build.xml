@@ -1,0 +1,79 @@
+<project default="build-war" basedir=".">
+
+
+  <!-- =================================================================== -->
+  <!-- Initialization target                                               -->
+  <!-- =================================================================== -->
+  <target name="init">
+    <tstamp/>
+    <property name="database.admin.name" value="root"/>
+    <property name="database.admin.password" value="marathon"/>
+
+    <property name="project.name" value="sched-webwork" />
+    <echo message="----------- ${project.name} -----------------------------"/>
+
+    <property name="debug" value="on"/>
+    <property name="deprecation" value="on"/>
+    <property name="servlet.jar.location" value="C:/Program Files/Apache Tomcat 4.0/common/lib/servlet.jar" />
+
+    <property name="project.home" value="." />
+    <property name="src.dir"    value="${project.home}/src"/>
+    <property name="build.dest" value="${project.home}/classes"/>
+    <property name="resources" value="${project.home}/resources" />
+    <property name="root.dir"    value="${project.home}/root" />
+    <property name="lib.src"    value="${src.dir}/**/lib/*" />
+    <property name="lib.files" value="${build.dest}/**/lib/*" />
+    <property name="war.file" value="${project.name}.war"/>
+    <property name="servlet.dir" value="${root.dir}/web-inf/classes" />
+    <property name="lib.dir" value="${root.dir}/web-inf/lib" />
+    <property name="db.lib.jar" value="./lib/mysql/mysql-connector-java-3.0.8-stable-bin.jar" />
+
+  </target>
+
+    <target name="to-run-this-sample" depends="init" >
+        <echo>
+        To run this sample, deploy the WAR file to a servlet engine and use
+        the URI
+
+                http://&lt;server-name&gt;:&lt;port-number&gt;/sched-webwork/viewschedule.action
+
+
+        For example, if you are using TomCat:
+
+                http://localhost:8080/sched-webwork/viewschedule.action
+
+
+        See the sample's Readme.html for more information.
+        </echo>
+    </target>
+
+  <!-- =================================================================== -->
+  <!-- Build WAR                                                           -->
+  <!-- =================================================================== -->
+  <target name="build-war" depends="init" description="Build project WAR file">
+    <mkdir dir="${servlet.dir}"/>
+    <copy todir="${servlet.dir}" >
+        <fileset dir="${resources}">
+            <include name="**/*.properties" />
+        </fileset>
+    </copy>
+    <copy todir="${root.dir}" >
+        <fileset dir="${resources}">
+            <include name="**/template/**" />
+        </fileset>
+    </copy>
+    <war basedir="${root.dir}"
+         compress="false"
+         excludes="WEB-INF/web.xml"
+         includes="**"
+         warfile="${war.file}"
+         webxml="${root.dir}/WEB-INF/web.xml"/>
+  </target>
+
+    <target name="setup-sample-database">
+        <ant antfile="build-sample-data.xml" dir="." target="setup-sample-database" />
+    </target>
+
+
+
+</project>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+  <data-sources>
+    <data-source
+            type="com.mysql.jdbc.jdbc2.optional.MysqlDataSource">
+      <set-property property="url"
+            value="jdbc:mysql://localhost/schedule"  />
+      <set-property property="user" value="root"  />
+      <set-property property="password" value="marathon"  />
+      <set-property property="maxCount" value="5"  />
+      <set-property property="driverClass"
+            value="com.mysql.jdbc.Driver"  />
+      <set-property value="1" property="minCount" />
+    </data-source>
+  </data-sources>
+  <form-beans>
+    <form-bean name="scheduleItem"
+            type="com.nealford.art.schedstruts.entity.ScheduleItem"
+            dynamic="no" />
+  </form-beans>
+  <action-mappings>
+    <action
+      type="com.nealford.art.schedstruts.action.ViewScheduleAction"
+      path="/sched">
+            <forward name="success" path="/ScheduleView.jsp" />
+    </action>
+    <action
+      type="com.nealford.art.schedstruts.action.ScheduleEntryAction"
+      path="/schedEntry">
+            <forward name="success" path="/ScheduleEntryView.jsp" />
+    </action>
+    <action name="scheduleItem"
+      type="com.nealford.art.schedstruts.action.AddToScheduleAction"
+      validate="true" input="/ScheduleEntryView.jsp"
+      scope="session" path="/add">
+            <forward name="success" path="/sched.do" />
+            <forward name="error" path="/ScheduleEntryView.jsp" />
+    </action>
+  </action-mappings>
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property
+      property="pathnames"
+      value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+  </plug-in>
+</struts-config>

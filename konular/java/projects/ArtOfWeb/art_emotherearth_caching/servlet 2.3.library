@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>servlet 2.3</fullname>
+  <class>
+    <path>[lib/servlet/servlet.jar]</path>
+  </class>
+  <lastmodsaved>1067016518836</lastmodsaved>
+</library>

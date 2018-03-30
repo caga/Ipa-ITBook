@@ -1,0 +1,31 @@
+.control
+{
+  margin: 5px;
+  margin-left: 10px;
+  padding: 3px;
+  text-align: right;
+}
+
+.control .errorMessage
+{
+   color: red;
+   font-weight: bold;
+}
+
+.control .errorLabel
+{
+   float: left;
+   color: red;
+}
+
+.control .label
+{
+   float: left;
+   font-style: italic;
+}
+
+.control input
+{
+  clear: none;
+  margin-bottom: 5px;
+}

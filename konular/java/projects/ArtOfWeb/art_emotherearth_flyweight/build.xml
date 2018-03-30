@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="rebuild" name="art_emotherearth_base.jpx">
+  <property name="database.admin.name" value="root"/>
+  <property name="database.admin.password" value="marathon"/>
+  <property name="dest" value="classes.ant"/>
+  <property name="mysql.home" value="lib/mysql"/>
+  <property name="servlet2.3.home" value="lib/servlet"/>
+  <property name="src" value="src"/>
+  <path id="project.class.path">
+    <pathelement location="${dest}"/>
+    <pathelement location="${mysql.home}/mysql-connector-java-3.0.8-stable-bin.jar"/>
+    <pathelement location="${servlet2.3.home}/servlet.jar"/>
+    <pathelement location="${java.home}/lib/rt.jar"/>
+  </path>
+
+  <!--Patternset to exclude files from the output directory:-->
+  <patternset id="dest.exclude">
+    <exclude name="Temporary_Files/"/>
+    <exclude name="Generated Source/"/>
+    <exclude name="package cache/"/>
+    <exclude name="dependency cache/"/>
+    <exclude name="jsp cache/"/>
+  </patternset>
+
+    <target name="to-run-this-sample" depends="init" >
+        <echo>
+        To run this sample, deploy the WAR file to a servlet engine and use
+        the URI
+
+                http://&lt;server-name&gt;:&lt;port-number&gt;/emotherearth/welcome
+
+
+        For example, if you are using TomCat:
+
+                http://localhost:8080/emotherearth/welcome
+
+
+        See the sample's Readme.html for more information.
+        </echo>
+    </target>
+
+
+  <target depends="init" name="javacompile">
+    <javac bootclasspathref="project.class.path" debug="true" deprecation="true" destdir="${dest}" nowarn="false" target="1.1">
+      <src path="${src}"/>
+    </javac>
+  </target>
+
+  <target depends="resource" name="war">
+    <war compress="false" destfile="emotherearth.war" webxml="root/WEB-INF/web.xml">
+      <classes dir="${dest}">
+        <patternset refid="dest.exclude"/>
+        <include name="**/*.*"/>
+      </classes>
+      <fileset dir="root">
+        <include name="**/*.aiff"/>
+        <include name="**/*.asf"/>
+        <include name="**/*.asp"/>
+        <include name="**/*.asx"/>
+        <include name="**/*.au"/>
+        <include name="**/*.chtml"/>
+        <include name="**/*.class"/>
+        <include name="**/*.codestyle"/>
+        <include name="**/*.css"/>
+        <include name="**/*.dbxmi"/>
+        <include name="**/*.ear"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.htm"/>
+        <include name="**/*.html"/>
+        <include name="**/*.jar"/>
+        <include name="**/*.jnlp"/>
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.js"/>
+        <include name="**/*.jsp"/>
+        <include name="**/*.library"/>
+        <include name="**/*.mapxmi"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.png"/>
+        <include name="**/*.ram"/>
+        <include name="**/*.rar"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.schxmi"/>
+        <include name="**/*.shtml"/>
+        <include name="**/*.tblxmi"/>
+        <include name="**/*.tld"/>
+        <include name="**/*.war"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.wml"/>
+        <include name="**/*.xmi"/>
+        <include name="**/*.xml"/>
+        <include name="**/*.zip"/>
+        <exclude name="WEB-INF/"/>
+      </fileset>
+      <lib dir="${mysql.home}">
+        <include name="mysql-connector-java-3.0.8-stable-bin.jar"/>
+      </lib>
+    </war>
+  </target>
+
+  <target name="cleanup">
+    <delete file="emotherearth.war"/>
+    <delete failonerror="false" includeemptydirs="true">
+      <fileset dir="${dest}"/>
+    </delete>
+  </target>
+
+  <target name="resource">
+    <copy todir="${dest}">
+      <fileset dir="${src}">
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.au"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.properties"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="javadoc"/>
+
+  <target depends="cleanup" name="clean"/>
+
+  <target name="precompile"/>
+
+  <target depends="javacompile" name="compile"/>
+
+  <target name="postcompile"/>
+
+  <target depends="war,javadoc,resource" name="package"/>
+
+  <target name="deploy"/>
+
+  <target depends="precompile,compile,postcompile,package,deploy, to-run-this-sample" name="make"/>
+
+  <target depends="clean,make" name="rebuild"/>
+
+  <target name="init">
+    <mkdir dir="${dest}"/>
+  </target>
+
+    <target name="setup-sample-database">
+        <ant antfile="build-sample-data.xml" dir="." target="setup-sample-database" />
+    </target>
+
+
+</project>

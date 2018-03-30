@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>commons collections</fullname>
+  <class>
+    <path>[lib/commons collections/commons-collections.jar]</path>
+  </class>
+  <lastmodsaved>1062683401161</lastmodsaved>
+</library>

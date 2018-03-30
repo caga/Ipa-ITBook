@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>JSTL</fullname>
+  <class>
+    <path>[lib/jstl/jaxen-full.jar]</path>
+    <path>[lib/jstl/jstl.jar]</path>
+    <path>[lib/jstl/saxpath.jar]</path>
+    <path>[lib/jstl/standard.jar]</path>
+  </class>
+  <lastmodsaved>1066944378445</lastmodsaved>
+</library>

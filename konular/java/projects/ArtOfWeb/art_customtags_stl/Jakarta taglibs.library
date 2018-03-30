@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>Jakarta taglibs</fullname>
+  <class>
+    <path>[lib/taglibs/taglibs-page.jar]</path>
+    <path>[lib/taglibs/taglibs-request.jar]</path>
+    <path>[lib/taglibs/taglibs-session.jar]</path>
+  </class>
+  <lastmodsaved>1066772549777</lastmodsaved>
+</library>

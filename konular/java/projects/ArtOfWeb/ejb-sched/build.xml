@@ -1,0 +1,172 @@
+<project default="deploy" basedir=".">
+
+    <!-- ======================================================= -->
+    <!-- Initialization target                                   -->
+    <!-- ======================================================= -->
+    <target name="init">
+        <tstamp/>
+
+        <!-- names -->
+        <property name="web.app.name" value="ejb-sched" />
+        <property name="ear.name"     value="ejbsched" />
+        <property name="project.name" value="ejb-sched" />
+        <property name="ear.file"     value="${ear.name}.ear" />
+        <property name="war.file"     value="${web.app.name}.war" />
+        <property name="ejb.jar"      value="ejbschedmodel.jar" />
+        <property name="web.jar"      value="ejbschedlib.jar" />
+
+
+        <!-- resource locations -->
+        <property name="j2ee.jar.loc"
+            value="C:/bin/java/j2sdkee1.3.1/lib/j2ee.jar" />
+
+        <!-- directories -->
+        <property name="build.dir"  value="./classes"/>
+        <property name="build.src"  value="./src"/>
+        <property name="bak.dir"    value="./bak" />
+        <property name="jboss.home"
+                  value="C:/bin/JBoss-2.4.6_Tomcat-4.0.3" />
+        <property name="web.root"   value="./root/WEB-INF" />
+        <property name="deploy.dir"
+                  value="${jboss.home}/jboss/deploy" />
+        <property name="lib.dest"
+                  value="${web.root}/lib/${web.jar}"/>
+        <property name="ejb.classes" value="**/ejb/**" />
+        <property name="model.classes" value="**/model/**" />
+        <property name="controller.classes"
+                  value="**/controller/**" />
+
+        <!-- pattern sets -->
+        <property name="exclude.files"
+        value="**/Generated Source/**,**/jsp cache/**,**/package cache/**,**/dependency cache/**" />
+        <property name="include.class.files" value="classes/**" />
+        <patternset id="backups">
+            <include name="**/*.~,${bak.dir}" />
+        </patternset>
+
+        <echo message="-------- ${project.name} -----------------"/>
+    </target>
+
+    <!-- ======================================================= -->
+    <!-- Help on usage                                           -->
+    <!-- ======================================================= -->
+    <target name="usage" description="Usage">
+        <echo>
+         ---------------------------------------------------------
+        Ant build file for Parameterized Requests
+
+        targets:
+            compile             Compiles source
+            war                 Builds deployable WAR file
+            ear                 Builds deployable EAR file
+            deploy [default]    Build and deploy
+            clean               Cleans up build directories
+        ---------------------------------------------------------
+        </echo>
+    </target>
+
+    <!-- ======================================================= -->
+    <!-- Prepares build environment                              -->
+    <!-- ======================================================= -->
+    <target name="prepare" depends="init">
+        <antcall target="clean" />
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+
+    <!-- ======================================================= -->
+    <!-- Compiles classes                                        -->
+    <!-- ======================================================= -->
+    <target name="compile" depends="prepare" description="Compile" >
+        <javac srcdir="${build.src}"
+                destdir="${build.dir}" >
+            <classpath>
+                <pathelement location="${j2ee.jar.loc}"/>
+            </classpath>
+        </javac>
+    </target>
+
+
+    <!-- ======================================================= -->
+    <!-- Builds web jar file                                     -->
+    <!-- ======================================================= -->
+    <target name="build-web-jar" depends="compile"
+            description="Builds web jar">
+        <jar jarfile="${web.root}/lib/${web.jar}"
+                compress="false">
+            <fileset dir="${build.dir}"
+                    excludes="**/Math*.class,${exclude.files}" />
+        </jar>
+
+    </target>
+
+    <!-- ======================================================= -->
+    <!-- Builds deployable WAR file                              -->
+    <!-- ======================================================= -->
+    <target name="war" depends="build-web-jar"
+            description="Builds WAR">
+        <war warfile="${war.file}" webxml="${web.root}/web.xml" >
+            <fileset dir="./root" includes="*.jsp" />
+            <lib dir="${web.root}/lib" />
+        </war>
+    </target>
+
+    <!-- ======================================================= -->
+    <!-- Builds EJB jar file                                     -->
+    <!-- ======================================================= -->
+    <target name="build-ejb" depends="compile"
+            description="Builds EJB Jar">
+        <jar jarfile="${ejb.jar}"
+                compress="false">
+            <fileset dir="${build.dir}"
+                    includes="${ejb.classes},${model.classes}"
+                    excludes="${exclude.files}" />
+            <metainf dir="." includes="ejb*.xml,jaws.xml" />
+        </jar>
+
+    </target>
+
+
+    <!-- ======================================================= -->
+    <!-- Builds EAR file                                         -->
+    <!-- ======================================================= -->
+    <target name="ear" depends="build-ejb,war"
+            description="Builds EAR">
+        <ear earfile="${ear.file}"
+                compress="false"
+                appxml="application.xml" >
+            <fileset dir="."
+                    includes="*.jar,*.war"
+                    excludes="${web.jar}"/>
+        </ear>
+
+    </target>
+
+
+    <!-- ======================================================= -->
+    <!-- deploy                                                  -->
+    <!-- ======================================================= -->
+    <target name="deploy" depends="ear"
+            description="Deploys to JBoss">
+        <copy file="${ear.file}" todir="${deploy.dir}" />
+    </target>
+
+
+    <!-- ======================================================= -->
+    <!-- Clean build directories                                 -->
+    <!-- ======================================================= -->
+    <target name="clean" depends="init"
+            description="Clean build directories">
+        <delete dir="${build.dir}"/>
+        <delete file="${ejb.jar}" />
+        <delete file="${war.file}" />
+        <delete file="${ear.file}" />
+        <delete file="${lib.dest}" />
+        <delete verbose="true">
+            <fileset  dir="${build.src}">
+                <patternset refid="backups" />
+            </fileset>
+        </delete>
+    </target>
+
+</project>

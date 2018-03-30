@@ -1,0 +1,10 @@
+[PropertyInfo]
+initUrl,String,false,false,initUrl,initUrl,true,<default>
+initDriverClass,String,false,false,initDriverClass,initDriverClass,true,<default>
+initUser,String,false,false,initUser,initUser,true,<default>
+initPassword,String,false,false,initPassword,initPassword,true,<default>
+[IconNames]
+
+
+
+

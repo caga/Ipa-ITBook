@@ -1,0 +1,104 @@
+<xsp:page
+    xmlns:xsp="http://apache.org/xsp"
+    xmlns:xsp-request="http://apache.org/xsp/request/2.0">
+  <xsp:structure>
+    <xsp:include>java.util.Iterator</xsp:include>
+    <xsp:include>java.util.List</xsp:include>
+    <xsp:include>com.nealford.art.schedcocoon.entity.ScheduleItem</xsp:include>
+  </xsp:structure>
+
+<page>
+<HTML>
+<HEAD>
+<TITLE>
+Add Schedule Item
+</TITLE>
+</HEAD>
+<BODY>
+<H3>
+Add New Schedule Entry
+</H3>
+<xsp:logic>{
+    List errors = (List) <xsp-request:get-attribute name="errors" />;
+    if (errors != null &amp;&amp; ! errors.isEmpty()) {
+        <hr/>
+        <b><u>Validation Errors</u></b><br/>
+        <font color="red">
+        Iterator it = errors.iterator();
+        while (it.hasNext())
+            <xsp:expr>(String) it.next()</xsp:expr><br/>
+        </font>
+        <hr/>
+}</xsp:logic>
+
+<!-- Data entry form -->
+<form action="saveentry" method="post">
+<table border="0" width="30%" align="left">
+  <tr>
+    <th align="right">
+      Duration
+    </th>
+    <td align="left">
+    <input name="duration" size="16"
+        value="<jsp:getProperty name="scheduleItem"
+                property="duration"/>">
+    </td>
+  </tr>
+  <tr>
+    <th align="right">
+      Event Type
+    </th>
+    <td align="left">
+      <select name="eventTypeKey">
+<%
+          //-- get the list of allowable event types from bean
+            int currentValue = scheduleItem.getEventTypeKey();
+            Map eventMap = scheduleDb.getEventTypes();
+            Set keySet = eventMap.keySet();
+            Iterator eti = keySet.iterator();
+            while (eti.hasNext()) {
+                int key = ((Integer) eti.next()).intValue();
+%>
+                <option value='<%= key %>'<%= (currentValue == key ?
+                    "selected" : "") + ">" +
+                    eventMap.get(new Integer(key)) %>
+<%
+            }
+%>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th align="right">
+      Start
+    </th>
+    <td align="left">
+      <input name="start" size="16" value="<jsp:getProperty
+            name="scheduleItem" property="start"/>"/>
+    </td>
+  </tr>
+  <tr>
+    <th align="right">
+      Text
+    </th>
+    <td align="left">
+      <input name="text" size="16"	value="<jsp:getProperty
+            name="scheduleItem"	property="text"/>"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="right">
+        <input type="submit" name="Submit" value="Submit">
+    </td>
+    <td align="right">
+        <input type="reset" value="Reset">
+    </td>
+  </tr>
+</table>
+</form>
+
+</BODY>
+</HTML>
+</page>
+</xsp:page>

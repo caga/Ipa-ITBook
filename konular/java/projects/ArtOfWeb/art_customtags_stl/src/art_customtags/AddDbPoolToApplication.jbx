@@ -1,0 +1,10 @@
+[PropertyInfo]
+dbUser,String,false,false,dbUser,dbUser,true,<default>
+dbUrl,String,false,false,dbUrl,dbUrl,true,<default>
+dbDriver,String,false,false,dbDriver,dbDriver,true,<default>
+dbPassword,String,false,false,dbPassword,dbPassword,true,<default>
+[IconNames]
+
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>webwork</fullname>
+  <class>
+    <path>[lib/webwork/bsf.jar]</path>
+    <path>[lib/webwork/commons-beanutils.jar]</path>
+    <path>[lib/webwork/commons-collections.jar]</path>
+    <path>[lib/webwork/commons-digester.jar]</path>
+    <path>[lib/webwork/cos-multipart.jar]</path>
+    <path>[lib/webwork/itext-0.81.jar]</path>
+    <path>[lib/webwork/jasperreports.jar]</path>
+    <path>[lib/webwork/js.jar]</path>
+    <path>[lib/webwork/pell-multipart.jar]</path>
+    <path>[lib/webwork/saxon.jar]</path>
+    <path>[lib/webwork/velocity-dep-1.2.jar]</path>
+    <path>[lib/webwork/webwork.jar]</path>
+  </class>
+  <lastmodsaved>1067619829275</lastmodsaved>
+</library>

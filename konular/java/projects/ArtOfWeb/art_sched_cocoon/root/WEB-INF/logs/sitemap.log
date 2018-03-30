@@ -1,0 +1,419 @@
+DEBUG   (2003-10-30) 15:29.00:740   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Sitemap location = sitemap.xmap
+DEBUG   (2003-10-30) 15:29.00:740   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Checking sitemap reload = true
+DEBUG   (2003-10-30) 15:29.00:740   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Reloading sitemap asynchron = false
+DEBUG   (2003-10-30) 15:29.00:740   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Sitemap check delay = 1 sec
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.acting.ActionSelector with shorthand action for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.selection.SelectorSelector with shorthand selector for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.matching.MatcherSelector with shorthand matcher for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.generation.GeneratorSelector with shorthand generator for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.transformation.TransformerSelector with shorthand transformer for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.serialization.SerializerSelector with shorthand serializer for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.reading.ReaderSelector with shorthand reader for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2003-10-30) 15:29.00:910   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.notification.NotifyingBuilder with shorthand notifying-builder for org.apache.cocoon.components.notification.DefaultNotifyingBuilder
+DEBUG   (2003-10-30) 15:29.13:909   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/Handler: Beginning sitemap regeneration
+DEBUG   (2003-10-30) 15:29.20:618   [sitemap.matcher.sessionstate] (/sched-cocoon/) HttpProcessor[8080][3]/WildcardSessionAttributeMatcher: Default attribute-name is = 'org.apache.cocoon.SessionState'
+DEBUG   (2003-10-30) 15:29.20:809   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/Handler: Sitemap regeneration complete
+DEBUG   (2003-10-30) 15:29.20:809   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/Handler: The sitemap has been successfully compiled!
+DEBUG   (2003-10-30) 15:29.20:929   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/sitemap_xmap: Matched wildcard pattern 
+DEBUG   (2003-10-30) 15:29.20:929   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: ''
+
+DEBUG   (2003-10-30) 15:29.20:929   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/sitemap_xmap: Sitemap: session='false', redirecting to home.html
+DEBUG   (2003-10-30) 15:29.20:969   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Matched wildcard pattern **.html
+DEBUG   (2003-10-30) 15:29.20:969   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: 'home.html'
+PARAM: '1' VALUE: 'home'
+
+DEBUG   (2003-10-30) 15:29.20:969   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component generator:file(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:29.20:969   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as home
+DEBUG   (2003-10-30) 15:29.20:969   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Source= docs/home.xml
+DEBUG   (2003-10-30) 15:29.20:969   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as home
+DEBUG   (2003-10-30) 15:29.20:979   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component transformer:xslt(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:29.20:979   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Source= stylesheets/apache.xsl
+DEBUG   (2003-10-30) 15:29.20:979   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Looking up org.apache.cocoon.components.browser.Browser
+DEBUG   (2003-10-30) 15:29.21:069   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use parameters is false for org.apache.cocoon.transformation.TraxTransformer@1da366c
+DEBUG   (2003-10-30) 15:29.21:069   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use cookies is false for org.apache.cocoon.transformation.TraxTransformer@1da366c
+DEBUG   (2003-10-30) 15:29.21:069   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use browser capabilities is false for org.apache.cocoon.transformation.TraxTransformer@1da366c
+DEBUG   (2003-10-30) 15:29.21:069   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use session info is false for org.apache.cocoon.transformation.TraxTransformer@1da366c
+DEBUG   (2003-10-30) 15:29.21:069   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use XSLTProcessor of role org.apache.cocoon.components.xslt.XSLTProcessor
+DEBUG   (2003-10-30) 15:29.21:079   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component serializer:html(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:29.21:079   [sitemap.serializer.html] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractTextSerializer: Trax handler org.apache.xalan.transformer.TransformerIdentityImpl needs namespace attributes (will be slower).
+DEBUG   (2003-10-30) 15:29.21:109   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Using stylesheet: 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/apache.xsl' in org.apache.cocoon.transformation.TraxTransformer@1da366c, last modified: 1050523503585
+DEBUG   (2003-10-30) 15:29.21:420   [sitemap.generator.file] (/sched-cocoon/home.html) HttpProcessor[8080][3]/FileGenerator: processing file docs/home.xml
+DEBUG   (2003-10-30) 15:29.21:420   [sitemap.generator.file] (/sched-cocoon/home.html) HttpProcessor[8080][3]/FileGenerator: file resolved to file:/C:/home/dev/art/art_sched_cocoon/root/docs/home.xml
+WARN    (2003-10-30) 15:29.21:420   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Error, try to process the error page
+org.apache.cocoon.ProcessingException: Exception during processing of file:/C:/home/dev/art/art_sched_cocoon/root/docs/home.xml: java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:211)
+	at org.apache.cocoon.generation.FileGenerator.generate(FileGenerator.java:143)
+	at org.apache.cocoon.components.pipeline.CachingEventPipeline.process(CachingEventPipeline.java:250)
+	at org.apache.cocoon.components.pipeline.CachingStreamPipeline.process(CachingStreamPipeline.java:399)
+	at org.apache.cocoon.www.sitemap_xmap.matchN400224(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1640)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1433)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1367)
+	at org.apache.cocoon.sitemap.Handler.process(Handler.java:224)
+	at org.apache.cocoon.sitemap.Manager.invoke(Manager.java:179)
+	at org.apache.cocoon.sitemap.SitemapManager.process(SitemapManager.java:154)
+	at org.apache.cocoon.Cocoon.process(Cocoon.java:575)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:999)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+Caused by: java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+	at org.apache.cocoon.components.source.FileSource.getInputStream(FileSource.java:140)
+	at org.apache.cocoon.components.source.AbstractStreamSource.getInputSource(AbstractStreamSource.java:161)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:206)
+	... 40 more
+java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+	at org.apache.cocoon.components.source.FileSource.getInputStream(FileSource.java:140)
+	at org.apache.cocoon.components.source.AbstractStreamSource.getInputSource(AbstractStreamSource.java:161)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:206)
+	at org.apache.cocoon.generation.FileGenerator.generate(FileGenerator.java:143)
+	at org.apache.cocoon.components.pipeline.CachingEventPipeline.process(CachingEventPipeline.java:250)
+	at org.apache.cocoon.components.pipeline.CachingStreamPipeline.process(CachingStreamPipeline.java:399)
+	at org.apache.cocoon.www.sitemap_xmap.matchN400224(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1640)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1433)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1367)
+	at org.apache.cocoon.sitemap.Handler.process(Handler.java:224)
+	at org.apache.cocoon.sitemap.Manager.invoke(Manager.java:179)
+	at org.apache.cocoon.sitemap.SitemapManager.process(SitemapManager.java:154)
+	at org.apache.cocoon.Cocoon.process(Cocoon.java:575)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:999)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+	at org.apache.cocoon.components.source.FileSource.getInputStream(FileSource.java:140)
+	at org.apache.cocoon.components.source.AbstractStreamSource.getInputSource(AbstractStreamSource.java:161)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:206)
+	at org.apache.cocoon.generation.FileGenerator.generate(FileGenerator.java:143)
+	at org.apache.cocoon.components.pipeline.CachingEventPipeline.process(CachingEventPipeline.java:250)
+	at org.apache.cocoon.components.pipeline.CachingStreamPipeline.process(CachingStreamPipeline.java:399)
+	at org.apache.cocoon.www.sitemap_xmap.matchN400224(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1640)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1433)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1367)
+	at org.apache.cocoon.sitemap.Handler.process(Handler.java:224)
+	at org.apache.cocoon.sitemap.Manager.invoke(Manager.java:179)
+	at org.apache.cocoon.sitemap.SitemapManager.process(SitemapManager.java:154)
+	at org.apache.cocoon.Cocoon.process(Cocoon.java:575)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:999)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+DEBUG   (2003-10-30) 15:29.21:430   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Starting to build Notifying
+DEBUG   (2003-10-30) 15:29.21:450   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Got org.apache.cocoon.components.notification.DefaultNotifyingBuilder@5ba50e
+DEBUG   (2003-10-30) 15:29.21:460   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Built org.apache.cocoon.components.notification.SimpleNotifyingBean@b173c3
+DEBUG   (2003-10-30) 15:29.21:460   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Added to objectModelorg.apache.cocoon.components.notification.SimpleNotifyingBean@b173c3
+DEBUG   (2003-10-30) 15:29.21:460   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component transformer:xslt(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:29.21:460   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Source= stylesheets/system/error2html.xsl
+DEBUG   (2003-10-30) 15:29.21:460   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Looking up org.apache.cocoon.components.browser.Browser
+DEBUG   (2003-10-30) 15:29.21:470   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use parameters is false for org.apache.cocoon.transformation.TraxTransformer@1342f5b
+DEBUG   (2003-10-30) 15:29.21:470   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use cookies is false for org.apache.cocoon.transformation.TraxTransformer@1342f5b
+DEBUG   (2003-10-30) 15:29.21:470   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use browser capabilities is false for org.apache.cocoon.transformation.TraxTransformer@1342f5b
+DEBUG   (2003-10-30) 15:29.21:470   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use session info is false for org.apache.cocoon.transformation.TraxTransformer@1342f5b
+DEBUG   (2003-10-30) 15:29.21:470   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Use XSLTProcessor of role org.apache.cocoon.components.xslt.XSLTProcessor
+DEBUG   (2003-10-30) 15:29.21:470   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component serializer:html(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:29.21:480   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Using stylesheet: 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/system/error2html.xsl' in org.apache.cocoon.transformation.TraxTransformer@1342f5b, last modified: 1050523503625
+DEBUG   (2003-10-30) 15:29.53:225   [sitemap] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/sitemap_xmap: Matched wildcard pattern **.xml
+DEBUG   (2003-10-30) 15:29.53:225   [sitemap] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: 'index.xml'
+PARAM: '1' VALUE: 'index'
+
+DEBUG   (2003-10-30) 15:29.53:225   [sitemap] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/sitemap_xmap: Component generator:file(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:29.53:225   [sitemap] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as index
+DEBUG   (2003-10-30) 15:29.53:255   [sitemap] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/sitemap_xmap: Source= docs/index.xml
+DEBUG   (2003-10-30) 15:29.53:255   [sitemap] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as index
+DEBUG   (2003-10-30) 15:29.53:255   [sitemap] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/sitemap_xmap: Component serializer:xml(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:29.53:316   [sitemap.generator.file] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/FileGenerator: processing file docs/index.xml
+DEBUG   (2003-10-30) 15:29.53:316   [sitemap.generator.file] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/FileGenerator: file resolved to file:/C:/home/dev/art/art_sched_cocoon/root/docs/index.xml
+DEBUG   (2003-10-30) 15:30.50:438   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/sitemap_xmap: Matched wildcard pattern 
+DEBUG   (2003-10-30) 15:30.50:438   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: ''
+
+DEBUG   (2003-10-30) 15:30.50:438   [sitemap] (/sched-cocoon/) HttpProcessor[8080][3]/sitemap_xmap: Sitemap: session='false', redirecting to home.html
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Matched wildcard pattern **.html
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: 'home.html'
+PARAM: '1' VALUE: 'home'
+
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component generator:file(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as home
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Source= docs/home.xml
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as home
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component transformer:xslt(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Source= stylesheets/apache.xsl
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component serializer:html(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:30.50:478   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Using stylesheet: 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/apache.xsl' in org.apache.cocoon.transformation.TraxTransformer@1da366c, last modified: 1050523503585
+DEBUG   (2003-10-30) 15:30.50:488   [sitemap.generator.file] (/sched-cocoon/home.html) HttpProcessor[8080][3]/FileGenerator: processing file docs/home.xml
+DEBUG   (2003-10-30) 15:30.50:488   [sitemap.generator.file] (/sched-cocoon/home.html) HttpProcessor[8080][3]/FileGenerator: file resolved to file:/C:/home/dev/art/art_sched_cocoon/root/docs/home.xml
+WARN    (2003-10-30) 15:30.50:488   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Error, try to process the error page
+org.apache.cocoon.ProcessingException: Exception during processing of file:/C:/home/dev/art/art_sched_cocoon/root/docs/home.xml: java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:211)
+	at org.apache.cocoon.generation.FileGenerator.generate(FileGenerator.java:143)
+	at org.apache.cocoon.components.pipeline.CachingEventPipeline.process(CachingEventPipeline.java:250)
+	at org.apache.cocoon.components.pipeline.CachingStreamPipeline.process(CachingStreamPipeline.java:399)
+	at org.apache.cocoon.www.sitemap_xmap.matchN400224(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1640)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1433)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1367)
+	at org.apache.cocoon.sitemap.Handler.process(Handler.java:224)
+	at org.apache.cocoon.sitemap.Manager.invoke(Manager.java:179)
+	at org.apache.cocoon.sitemap.SitemapManager.process(SitemapManager.java:154)
+	at org.apache.cocoon.Cocoon.process(Cocoon.java:575)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:999)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+Caused by: java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+	at org.apache.cocoon.components.source.FileSource.getInputStream(FileSource.java:140)
+	at org.apache.cocoon.components.source.AbstractStreamSource.getInputSource(AbstractStreamSource.java:161)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:206)
+	... 40 more
+java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+	at org.apache.cocoon.components.source.FileSource.getInputStream(FileSource.java:140)
+	at org.apache.cocoon.components.source.AbstractStreamSource.getInputSource(AbstractStreamSource.java:161)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:206)
+	at org.apache.cocoon.generation.FileGenerator.generate(FileGenerator.java:143)
+	at org.apache.cocoon.components.pipeline.CachingEventPipeline.process(CachingEventPipeline.java:250)
+	at org.apache.cocoon.components.pipeline.CachingStreamPipeline.process(CachingStreamPipeline.java:399)
+	at org.apache.cocoon.www.sitemap_xmap.matchN400224(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1640)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1433)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1367)
+	at org.apache.cocoon.sitemap.Handler.process(Handler.java:224)
+	at org.apache.cocoon.sitemap.Manager.invoke(Manager.java:179)
+	at org.apache.cocoon.sitemap.SitemapManager.process(SitemapManager.java:154)
+	at org.apache.cocoon.Cocoon.process(Cocoon.java:575)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:999)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+java.io.FileNotFoundException: C:\home\dev\art\art_sched_cocoon\root\docs\home.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+	at org.apache.cocoon.components.source.FileSource.getInputStream(FileSource.java:140)
+	at org.apache.cocoon.components.source.AbstractStreamSource.getInputSource(AbstractStreamSource.java:161)
+	at org.apache.cocoon.components.source.AbstractStreamSource.toSAX(AbstractStreamSource.java:206)
+	at org.apache.cocoon.generation.FileGenerator.generate(FileGenerator.java:143)
+	at org.apache.cocoon.components.pipeline.CachingEventPipeline.process(CachingEventPipeline.java:250)
+	at org.apache.cocoon.components.pipeline.CachingStreamPipeline.process(CachingStreamPipeline.java:399)
+	at org.apache.cocoon.www.sitemap_xmap.matchN400224(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1640)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1433)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1367)
+	at org.apache.cocoon.sitemap.Handler.process(Handler.java:224)
+	at org.apache.cocoon.sitemap.Manager.invoke(Manager.java:179)
+	at org.apache.cocoon.sitemap.SitemapManager.process(SitemapManager.java:154)
+	at org.apache.cocoon.Cocoon.process(Cocoon.java:575)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:999)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+DEBUG   (2003-10-30) 15:30.50:498   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Starting to build Notifying
+DEBUG   (2003-10-30) 15:30.50:498   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Got org.apache.cocoon.components.notification.DefaultNotifyingBuilder@85e57
+DEBUG   (2003-10-30) 15:30.50:508   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Built org.apache.cocoon.components.notification.SimpleNotifyingBean@169a1c5
+DEBUG   (2003-10-30) 15:30.50:508   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Added to objectModelorg.apache.cocoon.components.notification.SimpleNotifyingBean@169a1c5
+DEBUG   (2003-10-30) 15:30.50:508   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component transformer:xslt(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:30.50:508   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Source= stylesheets/system/error2html.xsl
+DEBUG   (2003-10-30) 15:30.50:508   [sitemap] (/sched-cocoon/home.html) HttpProcessor[8080][3]/sitemap_xmap: Component serializer:html(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:30.50:508   [sitemap.transformer.xslt] (/sched-cocoon/home.html) HttpProcessor[8080][3]/TraxTransformer: Using stylesheet: 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/system/error2html.xsl' in org.apache.cocoon.transformation.TraxTransformer@1342f5b, last modified: 1050523503625
+DEBUG   (2003-10-30) 15:32.00:919   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/sitemap_xmap: Matched wildcard pattern **.html
+DEBUG   (2003-10-30) 15:32.00:919   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: 'index.html'
+PARAM: '1' VALUE: 'index'
+
+DEBUG   (2003-10-30) 15:32.00:919   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/sitemap_xmap: Component generator:file(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:32.00:919   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as index
+DEBUG   (2003-10-30) 15:32.00:919   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/sitemap_xmap: Source= docs/index.xml
+DEBUG   (2003-10-30) 15:32.00:919   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractSitemap: Substitute evaluated value for 1 as index
+DEBUG   (2003-10-30) 15:32.00:919   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/sitemap_xmap: Component transformer:xslt(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:32.00:929   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/sitemap_xmap: Source= stylesheets/apache.xsl
+DEBUG   (2003-10-30) 15:32.00:929   [sitemap] (/sched-cocoon/index.html) HttpProcessor[8080][3]/sitemap_xmap: Component serializer:html(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:32.00:959   [sitemap.transformer.xslt] (/sched-cocoon/index.html) HttpProcessor[8080][3]/TraxTransformer: Using stylesheet: 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/apache.xsl' in org.apache.cocoon.transformation.TraxTransformer@1da366c, last modified: 1050523503585
+DEBUG   (2003-10-30) 15:32.00:979   [sitemap.generator.file] (/sched-cocoon/index.html) HttpProcessor[8080][3]/FileGenerator: processing file docs/index.xml
+DEBUG   (2003-10-30) 15:32.00:979   [sitemap.generator.file] (/sched-cocoon/index.html) HttpProcessor[8080][3]/FileGenerator: file resolved to file:/C:/home/dev/art/art_sched_cocoon/root/docs/index.xml
+DEBUG   (2003-10-30) 15:32.11:805   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/sitemap_xmap: Matched wildcard pattern viewschedule
+DEBUG   (2003-10-30) 15:32.11:805   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: 'viewschedule'
+
+DEBUG   (2003-10-30) 15:32.12:355   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/sitemap_xmap: Action view-schedule
+DEBUG   (2003-10-30) 15:32.12:355   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '../0' VALUE: 'viewschedule'
+
+DEBUG   (2003-10-30) 15:32.12:365   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/sitemap_xmap: Component generator:serverpages(Parameters.EMPTY_PARAMETERS)
+DEBUG   (2003-10-30) 15:32.12:365   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/sitemap_xmap: Source= viewschedule.xsp
+DEBUG   (2003-10-30) 15:32.12:365   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractSitemap: 
+Current Sitemap Parameters:
+PARAM: '0' VALUE: 'viewschedule'
+
+DEBUG   (2003-10-30) 15:32.12:365   [sitemap] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/sitemap_xmap: Component serializer:html(Parameters.EMPTY_PARAMETERS)

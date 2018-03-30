@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>JRun</fullname>
+  <class>
+    <path>[../../../../../bin/JRun4/lib/jrun-xdoclet.jar]</path>
+    <path>[../../../../../bin/JRun4/lib/wsconfig.jar]</path>
+    <path>[../../../../../bin/JRun4/lib/jrunwizard.jar]</path>
+    <path>[../../../../../bin/JRun4/lib/jrun.jar]</path>
+    <path>[../../../../../bin/JRun4/lib/macromedia_drivers.jar]</path>
+    <path>[../../../../../bin/JRun4/lib/jrunwizard-installer.jar]</path>
+    <path>[../../../../../bin/JRun4/lib/webservices.jar]</path>
+  </class>
+</library>

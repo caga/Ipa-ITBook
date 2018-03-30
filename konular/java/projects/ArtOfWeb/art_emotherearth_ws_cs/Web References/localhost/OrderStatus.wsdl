@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://localhost/emotherearth/services/OrderStatus" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://localhost/emotherearth/services/OrderStatus" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types />
+  <message name="getShippingStatusResponse">
+    <part name="getShippingStatusReturn" type="s:string" />
+  </message>
+  <message name="getWsDescriptionRequest" />
+  <message name="getWsDescriptionResponse">
+    <part name="getWsDescriptionReturn" type="s:string" />
+  </message>
+  <message name="getOrderStatusResponse">
+    <part name="getOrderStatusReturn" type="s:string" />
+  </message>
+  <message name="getShippingStatusRequest">
+    <part name="orderKey" type="s:int" />
+  </message>
+  <message name="getOrderStatusRequest">
+    <part name="orderKey" type="s:int" />
+  </message>
+  <portType name="OrderInfo">
+    <operation name="getWsDescription">
+      <input name="getWsDescriptionRequest" message="tns:getWsDescriptionRequest" />
+      <output name="getWsDescriptionResponse" message="tns:getWsDescriptionResponse" />
+    </operation>
+    <operation name="getOrderStatus" parameterOrder="orderKey">
+      <input name="getOrderStatusRequest" message="tns:getOrderStatusRequest" />
+      <output name="getOrderStatusResponse" message="tns:getOrderStatusResponse" />
+    </operation>
+    <operation name="getShippingStatus" parameterOrder="orderKey">
+      <input name="getShippingStatusRequest" message="tns:getShippingStatusRequest" />
+      <output name="getShippingStatusResponse" message="tns:getShippingStatusResponse" />
+    </operation>
+  </portType>
+  <binding name="OrderStatusSoapBinding" type="tns:OrderInfo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="getWsDescription">
+      <soap:operation soapAction="" />
+      <input name="getWsDescriptionRequest">
+        <soap:body use="encoded" namespace="http://localhost/emotherearth/services/OrderStatus" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="getWsDescriptionResponse">
+        <soap:body use="encoded" namespace="http://localhost/emotherearth/services/OrderStatus" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="getOrderStatus">
+      <soap:operation soapAction="" />
+      <input name="getOrderStatusRequest">
+        <soap:body use="encoded" namespace="http://localhost/emotherearth/services/OrderStatus" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="getOrderStatusResponse">
+        <soap:body use="encoded" namespace="http://localhost/emotherearth/services/OrderStatus" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="getShippingStatus">
+      <soap:operation soapAction="" />
+      <input name="getShippingStatusRequest">
+        <soap:body use="encoded" namespace="http://localhost/emotherearth/services/OrderStatus" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="getShippingStatusResponse">
+        <soap:body use="encoded" namespace="http://localhost/emotherearth/services/OrderStatus" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="OrderInfoService">
+    <port name="OrderStatus" binding="tns:OrderStatusSoapBinding">
+      <soap:address location="http://localhost/emotherearth/services/OrderStatus" />
+    </port>
+  </service>
+</definitions>

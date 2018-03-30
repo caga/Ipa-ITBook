@@ -1,0 +1,211 @@
+DEBUG   (2003-10-30) 15:28.57:966   [access] (Unknown-URI) Unknown-thread/CocoonServlet: getRealPath for /: C:\home\dev\art\art_sched_cocoon\root\
+DEBUG   (2003-10-30) 15:28.57:976   [access] (Unknown-URI) Unknown-thread/CocoonServlet: URL for Root: file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:28.57:976   [access] (Unknown-URI) Unknown-thread/CocoonServlet: work-directory was not set - defaulting to C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files
+DEBUG   (2003-10-30) 15:28.58:046   [access] (Unknown-URI) Unknown-thread/CocoonServlet: upload-directory was not set - defaulting to C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\upload-dir
+DEBUG   (2003-10-30) 15:28.58:046   [access] (Unknown-URI) Unknown-thread/CocoonServlet: cache-directory was not set - defaulting to C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\cache-dir
+DEBUG   (2003-10-30) 15:28.58:046   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Using configuration file: /WEB-INF/cocoon.xconf
+DEBUG   (2003-10-30) 15:28.58:056   [access] (Unknown-URI) Unknown-thread/CocoonServlet: show-time was not set - defaulting to false
+DEBUG   (2003-10-30) 15:28.58:056   [access] (Unknown-URI) Unknown-thread/CocoonServlet: parent-component-manager was not set - defaulting to null.
+DEBUG   (2003-10-30) 15:28.58:056   [access] (Unknown-URI) Unknown-thread/CocoonServlet: container-encoding was not set - defaulting to ISO-8859-1.
+DEBUG   (2003-10-30) 15:28.58:056   [access] (Unknown-URI) Unknown-thread/CocoonServlet: form-encoding was not set - defaulting to null.
+DEBUG   (2003-10-30) 15:28.58:196   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Trying to load class: com.mysql.jdbc.Driver
+INFO    (2003-10-30) 15:28.58:226   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Reloading from: jndi:/localhost/sched-cocoon/WEB-INF/cocoon.xconf
+DEBUG   (2003-10-30) 15:29.13:909   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'sitemap.xmap' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:29.13:969   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/sitemap.xmap'
+DEBUG   (2003-10-30) 15:29.13:969   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Resolving '' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:29.13:969   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:29.20:879   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:29.20:879   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:29.20:879   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:29.20:879   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment:   at URI 
+DEBUG   (2003-10-30) 15:29.20:879   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:29.20:929   [access] (/sched-cocoon/) HttpProcessor[8080][3]/HttpEnvironment: Sending redirect to 'home.html'
+DEBUG   (2003-10-30) 15:29.20:929   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:29.20:929   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+INFO    (2003-10-30) 15:29.20:939   [access] (/sched-cocoon/) HttpProcessor[8080][3]/CocoonServlet: '' Processed by Apache Cocoon 2.0.3 in 7.14 seconds.
+ERROR   (2003-10-30) 15:29.20:939   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Cocoon servlet threw an Exception while trying to close stream.
+java.io.IOException: The stream has been closed
+	at org.apache.catalina.connector.ResponseStream.flush(ResponseStream.java:237)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:1126)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+DEBUG   (2003-10-30) 15:29.20:969   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:29.20:969   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:29.20:969   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:29.20:969   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment:   at URI home.html
+DEBUG   (2003-10-30) 15:29.20:969   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:29.21:109   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'docs/home.xml' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:29.21:109   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/docs/home.xml'
+DEBUG   (2003-10-30) 15:29.21:109   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'stylesheets/apache.xsl' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:29.21:109   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/apache.xsl'
+DEBUG   (2003-10-30) 15:29.21:430   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/HttpEnvironment: Response successfully reset
+DEBUG   (2003-10-30) 15:29.21:480   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'stylesheets/system/error2html.xsl' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:29.21:480   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/system/error2html.xsl'
+DEBUG   (2003-10-30) 15:29.21:790   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:29.21:790   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+INFO    (2003-10-30) 15:29.21:790   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/CocoonServlet: 'home.html' Processed by Apache Cocoon 2.0.3 in 831 milliseconds.
+DEBUG   (2003-10-30) 15:29.53:225   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:29.53:225   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:29.53:225   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:29.53:225   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment:   at URI index.xml
+DEBUG   (2003-10-30) 15:29.53:225   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:29.53:265   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'docs/index.xml' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:29.53:265   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/docs/index.xml'
+DEBUG   (2003-10-30) 15:29.53:366   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:29.53:366   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+INFO    (2003-10-30) 15:29.53:366   [access] (/sched-cocoon/index.xml) HttpProcessor[8080][3]/CocoonServlet: 'index.xml' Processed by Apache Cocoon 2.0.3 in 191 milliseconds.
+DEBUG   (2003-10-30) 15:30.50:438   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:30.50:438   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:30.50:438   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:30.50:438   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment:   at URI 
+DEBUG   (2003-10-30) 15:30.50:438   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:30.50:438   [access] (/sched-cocoon/) HttpProcessor[8080][3]/HttpEnvironment: Sending redirect to 'home.html'
+DEBUG   (2003-10-30) 15:30.50:448   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:30.50:448   [access] (/sched-cocoon/) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+INFO    (2003-10-30) 15:30.50:448   [access] (/sched-cocoon/) HttpProcessor[8080][3]/CocoonServlet: '' Processed by Apache Cocoon 2.0.3 in 20 milliseconds.
+ERROR   (2003-10-30) 15:30.50:448   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Cocoon servlet threw an Exception while trying to close stream.
+java.io.IOException: The stream has been closed
+	at org.apache.catalina.connector.ResponseStream.flush(ResponseStream.java:237)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:1126)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment:   at URI home.html
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'docs/home.xml' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/docs/home.xml'
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'stylesheets/apache.xsl' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:30.50:478   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/apache.xsl'
+DEBUG   (2003-10-30) 15:30.50:488   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/HttpEnvironment: Response successfully reset
+DEBUG   (2003-10-30) 15:30.50:508   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'stylesheets/system/error2html.xsl' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:30.50:508   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/system/error2html.xsl'
+DEBUG   (2003-10-30) 15:30.50:688   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:30.50:688   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+INFO    (2003-10-30) 15:30.50:688   [access] (/sched-cocoon/home.html) HttpProcessor[8080][3]/CocoonServlet: 'home.html' Processed by Apache Cocoon 2.0.3 in 220 milliseconds.
+DEBUG   (2003-10-30) 15:32.00:919   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:32.00:919   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:32.00:919   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:32.00:919   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment:   at URI index.html
+DEBUG   (2003-10-30) 15:32.00:919   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:32.00:929   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'docs/index.xml' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:32.00:959   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/docs/index.xml'
+DEBUG   (2003-10-30) 15:32.00:959   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'stylesheets/apache.xsl' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:32.00:959   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/stylesheets/apache.xsl'
+DEBUG   (2003-10-30) 15:32.01:059   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:32.01:059   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+INFO    (2003-10-30) 15:32.01:059   [access] (/sched-cocoon/index.html) HttpProcessor[8080][3]/CocoonServlet: 'index.html' Processed by Apache Cocoon 2.0.3 in 140 milliseconds.
+DEBUG   (2003-10-30) 15:32.11:805   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:32.11:805   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:32.11:805   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:32.11:805   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment:   at URI viewschedule
+DEBUG   (2003-10-30) 15:32.11:805   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:32.12:365   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'viewschedule.xsp' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:32.12:365   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/viewschedule.xsp'
+DEBUG   (2003-10-30) 15:32.12:365   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: Resolving 'viewschedule.xsp' in context 'file:/C:/home/dev/art/art_sched_cocoon/root/'
+DEBUG   (2003-10-30) 15:32.12:375   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: Resolved to 'file:/C:/home/dev/art/art_sched_cocoon/root/viewschedule.xsp'
+DEBUG   (2003-10-30) 15:32.13:677   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:32.13:677   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+INFO    (2003-10-30) 15:32.13:677   [access] (/sched-cocoon/viewschedule) HttpProcessor[8080][3]/CocoonServlet: 'viewschedule' Processed by Apache Cocoon 2.0.3 in 1.902 seconds.
+DEBUG   (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/AbstractEnvironment: Changing Cocoon context
+DEBUG   (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/AbstractEnvironment:   from context(file:/C:/home/dev/art/art_sched_cocoon/root/) and prefix()
+DEBUG   (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/AbstractEnvironment:   to context(sitemap.xmap) and prefix()
+DEBUG   (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/AbstractEnvironment:   at URI scheduleentry
+DEBUG   (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/AbstractEnvironment: New context is file:/C:/home/dev/art/art_sched_cocoon/root/
+DEBUG   (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/AbstractEnvironment: Set the URI Prefix (OLD=, NEW=)
+DEBUG   (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/AbstractEnvironment: Reset context to file:/C:/home/dev/art/art_sched_cocoon/root/
+WARN    (2003-10-30) 15:32.20:337   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/CocoonServlet: The resource was not found
+org.apache.cocoon.ResourceNotFoundException: No pipeline matched request: scheduleentry
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1445)
+	at org.apache.cocoon.www.sitemap_xmap.process(C:\home\dev\art\art_sched_cocoon\Tomcat\work\sched-cocoon\cocoon-files\org/apache/cocoon/www\sitemap_xmap.java:1367)
+	at org.apache.cocoon.sitemap.Handler.process(Handler.java:224)
+	at org.apache.cocoon.sitemap.Manager.invoke(Manager.java:179)
+	at org.apache.cocoon.sitemap.SitemapManager.process(SitemapManager.java:154)
+	at org.apache.cocoon.Cocoon.process(Cocoon.java:575)
+	at org.apache.cocoon.servlet.CocoonServlet.service(CocoonServlet.java:999)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:247)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:243)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:190)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.CertificatesValve.invoke(CertificatesValve.java:246)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardContext.invoke(StandardContext.java:2347)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:180)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDispatcherValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:170)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:564)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:174)
+	at org.apache.catalina.core.StandardPipeline.invokeNext(StandardPipeline.java:566)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:472)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1027)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1125)
+	at java.lang.Thread.run(Thread.java:536)
+INFO    (2003-10-30) 15:32.20:347   [access] (/sched-cocoon/scheduleentry) HttpProcessor[8080][3]/CocoonServlet: 'scheduleentry' Processed by Apache Cocoon 2.0.3 in 60 milliseconds.
+DEBUG   (2003-10-30) 15:33.00:655   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Servlet destroyed - disposing Cocoon

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>jstl</fullname>
+  <class>
+    <path>[lib/stl/dom.jar]</path>
+    <path>[lib/stl/jaxen-full.jar]</path>
+    <path>[lib/stl/jaxp-api.jar]</path>
+    <path>[lib/stl/jdbc2_0-stdext.jar]</path>
+    <path>[lib/stl/jstl.jar]</path>
+    <path>[lib/stl/sax.jar]</path>
+    <path>[lib/stl/saxpath.jar]</path>
+    <path>[lib/stl/standard.jar]</path>
+    <path>[lib/stl/xalan.jar]</path>
+    <path>[lib/stl/xercesImpl.jar]</path>
+  </class>
+  <lastmodsaved>1067458526986</lastmodsaved>
+</library>

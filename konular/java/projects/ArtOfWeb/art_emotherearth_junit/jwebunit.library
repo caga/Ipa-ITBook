@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>jwebunit</fullname>
+  <class>
+    <path>[lib/jwebunuit/httpunit.jar]</path>
+    <path>[lib/jwebunuit/js.jar]</path>
+    <path>[lib/jwebunuit/jwebunit.jar]</path>
+    <path>[lib/jwebunuit/nekohtml.jar]</path>
+    <path>[lib/jwebunuit/optional.jar]</path>
+    <path>[lib/jwebunuit/xercesImpl.jar]</path>
+    <path>[lib/jwebunuit/xml-apis.jar]</path>
+  </class>
+  <lastmodsaved>1067307484139</lastmodsaved>
+</library>

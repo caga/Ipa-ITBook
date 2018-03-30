@@ -1,0 +1,16 @@
+[PropertyInfo]
+column1,Column,false,false, , ,false,<default>
+column2,Column,false,false, , ,false,<default>
+column3,Column,false,false, , ,false,<default>
+column4,Column,false,false, , ,false,<default>
+dbSchedule,com.borland.dx.sql.dataset.Database,false,false, , ,true,<default>
+myDM,DataModuleSchedule,false,false, , ,false,<default>
+qryEvents,com.borland.dx.sql.dataset.QueryDataSet,false,false, , ,true,<default>
+qryEventType,com.borland.dx.sql.dataset.QueryDataSet,false,false, , ,true,<default>
+sqlRes,ResourceBundle,false,false, , ,false,<default>
+errorList,java.util.List,false,false,errorList,errorList,true,<default>
+[IconNames]
+
+
+
+

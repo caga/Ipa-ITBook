@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JBuilder XML Project-->
+<project>
+  <property category="generalFormatting" name="blockIndent" value="4"/>
+  <property category="generalFormatting" name="continuationIndent" value="8"/>
+  <property category="idl" name="ProcessIDL" value="false"/>
+  <property category="javaFormatting" name="EventStyle" value="0"/>
+  <property category="javaFormatting" name="alignMultilineAssign" value="1"/>
+  <property category="javaFormatting" name="alwaysClasses" value="1"/>
+  <property category="javaFormatting" name="arrayInitDataOnNewLine" value="0"/>
+  <property category="javaFormatting" name="blankLinesAfterClass" value="2"/>
+  <property category="javaFormatting" name="catchOnNewLine" value="0"/>
+  <property category="javaFormatting" name="createBrace" value="0"/>
+  <property category="javaFormatting" name="elseOnNewLine" value="0"/>
+  <property category="javaFormatting" name="extendsOnNewLine" value="0"/>
+  <property category="javaFormatting" name="finallyOnNewLine" value="0"/>
+  <property category="javaFormatting" name="implementsOnNewLine" value="0"/>
+  <property category="javaFormatting" name="indentCase" value="0"/>
+  <property category="javaFormatting" name="packagePrefixGroups" value="java;(blank line);javax;(blank line);(*)"/>
+  <property category="javaFormatting" name="packageThreshold" value="2"/>
+  <property category="javaFormatting" name="paramAlignThreshold" value="40"/>
+  <property category="javaFormatting" name="preservedBlankLinesInDecl" value="2"/>
+  <property category="javaFormatting" name="spaceBeforeLparen" value="0"/>
+  <property category="javaFormatting" name="whileOnNewLine" value="0"/>
+  <property category="javaFormatting" name="wrapAtColumn" value="68"/>
+  <property category="jspc" name="checkEnabled" value="0"/>
+  <property category="runtime" name="DefaultConfiguration" value="-1"/>
+  <property category="runtime.0" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+  <property category="runtime.0" name="ConfigurationName" value="Webwork"/>
+  <property category="runtime.0" name="RunnableType" value="com.borland.jbuilder.runtime.ServerRunner"/>
+  <property category="runtime.0" name="appserver.parameters" value=""/>
+  <property category="runtime.0" name="appserver.servername" value=""/>
+  <property category="runtime.0" name="appserver.vmparameters" value=""/>
+  <property category="runtime.0" name="enabled.services" value="jsp;naming"/>
+  <property category="runtime.0" name="jsp.launchuri" value="/sched-webwork/viewschedule.action"/>
+  <property category="runtime.0" name="jsprunner.launchuri" value="/sched-webwork/viewschedule.action"/>
+  <property category="runtime.0" name="server.arguments" value=""/>
+  <property category="runtime.0" name="server.disableServerClassTracing" value="0"/>
+  <property category="runtime.0" name="server.instance.name" value=""/>
+  <property category="runtime.0" name="server.name" value="Tomcat 4.0"/>
+  <property category="runtime.0" name="server.vmparameters" value=""/>
+  <property category="serverservices" name="disabled.services" value="connector;jdatastore"/>
+  <property category="serverservices" name="single.server.name" value="Tomcat 4.0"/>
+  <property category="sys" name="AuthorLabel" value="@author"/>
+  <property category="sys" name="BackupPath" value="bak"/>
+  <property category="sys" name="CheckStable" value="1"/>
+  <property category="sys" name="Company" value=""/>
+  <property category="sys" name="CompanyLabel" value="Company:"/>
+  <property category="sys" name="Copyright" value="Copyright (c) 2003"/>
+  <property category="sys" name="CopyrightLabel" value="Copyright:"/>
+  <property category="sys" name="DefaultPath" value="src"/>
+  <property category="sys" name="Description" value=""/>
+  <property category="sys" name="DescriptionLabel" value="Description:"/>
+  <property category="sys" name="DocPath" value="doc"/>
+  <property category="sys" name="ExcludeClassEnabled" value="0"/>
+  <property category="sys" name="IncludeTestPath" value="1"/>
+  <property category="sys" name="InstanceVisibility" value="2"/>
+  <property category="sys" name="JDK" value="java version 1.4.1_02-b06"/>
+  <property category="sys" name="JvmVersion" value="1.2"/>
+  <property category="sys" name="LastTag" value="0"/>
+  <property category="sys" name="Libraries" value="servlet2.3;mysql;log4j;webwork"/>
+  <property category="sys" name="MakeStable" value="0"/>
+  <property category="sys" name="OutPath" value="classes"/>
+  <property category="sys" name="SourcePath" value="src;test"/>
+  <property category="sys" name="TestPath" value="test"/>
+  <property category="sys" name="Title" value=""/>
+  <property category="sys" name="TitleLabel" value="Title:"/>
+  <property category="sys" name="Version" value="1.0"/>
+  <property category="sys" name="VersionLabel" value="@version"/>
+  <property category="sys" name="WorkingDirectory" value="."/>
+  <property category="team" name="ignorePath.0" value="Tomcat"/>
+  <property category="webapp" name="last.wizard" value="sched-webwork"/>
+  <property category="webapp" name="upgrade.4" value="0"/>
+  <node name="sched-webwork" type="WebContext">
+    <property category="archiving" name="archiverClass" value="com.borland.jbuilder.wizard.webapp.WarArchiver"/>
+    <property category="archiving" name="buildWithNode" value="0"/>
+    <property category="archiving" name="buildWithProject" value="0"/>
+    <property category="archiving" name="defaultLibraryState" value="3"/>
+    <property category="archiving" name="targetPath" value="sched-webwork.war"/>
+    <property category="webapp" name="docroot" value="root"/>
+  </node>
+  <file path="resources/com/nealford/art/schedwebwork/action/AddScheduleEntry.properties"/>
+  <file path="resources/com/nealford/art/schedwebwork/action/AddScheduleItem.properties"/>
+  <file path="art_sched_webwork.html"/>
+  <file path="build-sample-data.xml"/>
+  <file path="build.xml">
+    <property category="ant" name="buildwithproject" value="1"/>
+    <property category="ant" name="dependencyphase" value="postcompile"/>
+    <property category="antparams" name="build.compiler" value="com.borland.jbuilder.ant.compiler.Bmj"/>
+  </file>
+  <file path="resources/log4j.properties"/>
+  <file path="Readme.html"/>
+  <file path="schedule.sql"/>
+  <file path="resources/views.properties"/>
+  <file path="resources/com/nealford/art/schedwebwork/action/ViewSchedule.properties"/>
+  <file path="resources/webwork.properties"/>
+</project>

@@ -1,0 +1,54 @@
+<xsp:page
+    xmlns:xsp="http://apache.org/xsp"
+    xmlns:xsp-request="http://apache.org/xsp/request/2.0">
+  <xsp:structure>
+    <xsp:include>java.util.Iterator</xsp:include>
+    <xsp:include>
+        com.nealford.art.schedcocoon.entity.ScheduleItem
+    </xsp:include>
+  </xsp:structure>
+
+<page>
+<HTML>
+<HEAD>
+<TITLE>
+Schedule Items
+</TITLE>
+</HEAD>
+<BODY>
+
+<p><h2>Schedule List</h2></p>
+<table border="2">
+
+    <tr bgcolor="yellow">
+        <xsp:logic>{
+            String[] headers = (String [])
+                <xsp-request:get-attribute name="columnHeaders"/>;
+            for (int i = 0; i &lt; headers.length; i++) {
+                <th><xsp:expr>headers[i]</xsp:expr></th>
+            }
+        }</xsp:logic>
+    </tr>
+    <xsp:logic>{
+        List itemList = (List)
+               <xsp-request:get-attribute name="scheduleItemList"/>;
+        Iterator it = itemList.iterator();
+        while (it.hasNext()) {
+            ScheduleItem item = (ScheduleItem) it.next();
+            <tr>
+                <td><xsp:expr>item.getStart()</xsp:expr></td>
+                <td><xsp:expr>item.getDuration()</xsp:expr></td>
+                <td><xsp:expr>item.getText()</xsp:expr></td>
+                <td><xsp:expr>item.getEventType()</xsp:expr></td>
+            </tr>
+        }
+    }</xsp:logic>
+</table>
+<p/>
+
+<a href="scheduleentry">Add New Schedule Item</a>
+
+</BODY>
+</HTML>
+</page>
+</xsp:page>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>struts 1.1</fullname>
+  <class>
+    <path>[lib/struts/commons-beanutils.jar]</path>
+    <path>[lib/struts/commons-collections.jar]</path>
+    <path>[lib/struts/commons-digester.jar]</path>
+    <path>[lib/struts/commons-fileupload.jar]</path>
+    <path>[lib/struts/commons-lang.jar]</path>
+    <path>[lib/struts/commons-logging.jar]</path>
+    <path>[lib/struts/commons-validator.jar]</path>
+    <path>[lib/struts/jakarta-oro.jar]</path>
+    <path>[lib/struts/struts.jar]</path>
+    <path>[lib/struts/struts-legacy.jar]</path>
+  </class>
+  <kit>
+    <id>struts</id>
+    <data>
+      <taglib>
+        <name>struts-bean</name>
+        <prefix>bean</prefix>
+        <path>[lib/struts/struts.jar]/META-INF/tlds/struts-bean.tld</path>
+        <uri>/WEB-INF/struts-bean.tld</uri>
+        <location>/WEB-INF/struts-bean.tld</location>
+      </taglib>
+      <taglib>
+        <name>struts-html</name>
+        <prefix>html</prefix>
+        <path>[lib/struts/struts.jar]/META-INF/tlds/struts-html.tld</path>
+        <uri>/WEB-INF/struts-html.tld</uri>
+        <location>/WEB-INF/struts-html.tld</location>
+      </taglib>
+      <taglib>
+        <name>struts-logic</name>
+        <prefix>logic</prefix>
+        <path>[lib/struts/struts.jar]/META-INF/tlds/struts-logic.tld</path>
+        <uri>/WEB-INF/struts-logic.tld</uri>
+        <location>/WEB-INF/struts-logic.tld</location>
+      </taglib>
+      <taglib>
+        <name>struts-template</name>
+        <prefix>template</prefix>
+        <path>[lib/struts/struts.jar]/META-INF/tlds/struts-template.tld</path>
+        <uri>/WEB-INF/struts-template.tld</uri>
+        <location>/WEB-INF/struts-template.tld</location>
+      </taglib>
+    </data>
+  </kit>
+  <lastmodsaved>1067553878441</lastmodsaved>
+</library>

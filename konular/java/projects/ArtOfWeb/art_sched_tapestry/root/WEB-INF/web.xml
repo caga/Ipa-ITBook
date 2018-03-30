@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <context-param>
+    <param-name>log-file-location</param-name>
+    <param-value>c:/temp/sched-tapestry.log</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>welcome</servlet-name>
+    <servlet-class>com.nealford.art.schedtapestry.util.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.style1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1><span class="style1">Art of Java Web Development</span> Samples </h1>
+<p>This readme file describes one of the samples from the book <em>Art of Java Web Development</em>: <em>Struts, Tapestry, Commons, Velocity, JUnit, Axis, Cocoon, InternetBeans, WebWork </em>by Neal Ford (Manning Publications, 2003). Information about the book is available at <a href="http://www.manning.com/ford/index.html">http://www.manning.com/ford. </a></p>
+<h2>Sample application from Chapter 1: <code>art_emotherearth_junit</code></h2>
+<h3>To build and run this sample:</h3>
+<ol>
+  <li>You must install and set up the database -- see the description below. Once it is installed, you may run the ant target <code>setup-sample-database</code> to create the sample database for this sample. <em>Warning! It will removed any existing version of the database!</em> The admin user name for the database is assumed to be &quot;root&quot;, and the password is assumed to be &quot;marathon&quot;. If your values are different, modify the <strong><code>database.admin.name</code></strong> and/or <strong><code>database.admin.password</code></strong> properties in the Ant build file (defined at the top). </li>
+</ol>
+<h4>If you have JBuilder: </h4>
+<p>A JBuilder project exists for this sample. Open <code>art.emother.servlet.jpx</code> and you can build it and run it from within JBuilder. You can also build the sample database from within JBuilder by executing the <code>setup-sample-database</code> target. </p>
+<h4>If you don't have JBuilder: </h4>
+<ol>
+  <li>Use the Ant build tool, available from <a href="http://ant.apache.org/index.html">http://ant.apache.org</a>. Once it is installed and configured, run <code>ant</code> with no parameters to build the WAR file. </li>
+  <li> To run this sample, deploy the WAR file to a servlet engine and use
+    the URI <strong><code> http://&lt;server-name&gt;:&lt;port-number&gt;/emotherearth/welcome</code></strong>.<br>
+    For example, if you are using TomCat: <strong><code><a href="http://localhost:8080/emotherearth/welcome">http://localhost:8080/emotherearth/welcome</a>.</code></strong><br>
+  </li>
+  <li>To run the unit tests for JUnit and JWebUnit, consult the directions found in the chapter.</li>
+</ol>
+<h2>General Information about the samples</h2>
+<p>Two primary samples appear throughout the chapters. The use of only two samples
+  is intentional, but the reasons are different for each instance. The samples
+  are designed to illustrate the topics in the chapters, including the architecture,
+design, and specific techniques.</p>
+<h3>The eMotherEarth.com sample</h3>
+  <p>The architecture and technique samples revolve around the fictitious eMotherEarth e-commerce site. This site sells earth products, like dirt, leaves, mountains....
+  Fortunately, we don&rsquo;t have to worry about delivering the products; we&rsquo;re just presenting
+  a catalog. The application is a simple four-page web application that allows
+  logon, catalog display, checkout, and confirmation. Even though it&rsquo;s small, this site
+  is sufficient for us to highlight navigation, techniques, and architecture.
+  We use the eMotherEarth application in the early chapters to illustrate the
+  architecture of web applications and how it has evolved from servlets, to JSP and
+  custom tags, to the currently accepted industry standards. In later chapters, we use
+  the same sample application to illustrate various techniques for creating user interfaces,
+implementing caching, managing resources, and other advanced topics.
+  </p>
+</p>
+  <h3>The schedule sample</h3>
+  <p>    The other primary sample in Art of Java Web Development is the schedule application.
+    It is a simple two-page application that manages scheduling information,
+    and it appears in all the framework chapters. One of the goals of our book is to
+    show the various web frameworks in a manner that permits direct, head-to-head
+    comparison of features. Evaluating the frameworks based on their samples and
+    documentation doesn&rsquo;t allow you to perform this &ldquo;apples to apples&rdquo; comparison
+    because there is no ANSI standard web application sample.<br>
+    The framework chapters all build the same schedule application, each using
+    the framework discussed in that chapter. Unless otherwise noted, all the samples
+    use the same infrastructure for database access and representation of entities. The
+    difference in each case is the framework itself. It is remarkable how different the
+    versions of this sample end up, given the similarities of the basic architecture of
+    most of the frameworks and the common elements used to build them. However,
+    as you will see, the framework makes a tremendous difference in the implementation
+    of a web application.</p>
+  <h3>Sample setup</h3>
+  <p>    Art of Java Web Development is an intermediate to advanced book on web frameworks
+    and best practices. As such, we do not cover the basics of setting up a development
+    environment for the samples. You must handle that yourself. However, it
+    is exhaustively covered in other books and on the Internet. Two infrastructure
+    pieces are needed for the samples: a database server and a servlet engine. Each
+    sample does include an Ant file to build the sample using the Ant build utility. Ant
+    is available at ant.apache.org and is covered extensively in Manning&rsquo;s book Java
+  Development with Ant, by Erik Hatcher and Steve Loughran.</p>
+  <h4>    The database</h4>
+  <p>    Virtually all the samples in this book connect to a database because most realworld
+    applications also have to retrieve data from a database. We use the MySQL
+    database (available at www.mysql.com) because it is open source (and therefore
+    free for developer use) and because it is a great database server. However, you
+    aren&rsquo;t forced to use it to run the samples. With each of the samples, we include a
+    generic SQL setup script that builds the database for the application. The setup
+    script is designed around MySQL but can be easily modified to work in any ANSI
+    standard database server. To run the samples with MySQL, you must download it
+    and set it up yourself. You can download it <a href="http://www.mysql.com/">here</a>. </p>
+  <h4>The servlet engine    </h4>
+  <p>The web applications in this book utilize standard Java web development code, so
+        they all run in any Java 2 Enterprise Edition (J2EE)-compliant servlet engine.
+        Unless otherwise noted, we generally use Tomcat for the samples because it is
+        open source and is the reference implementation of the servlet API. Because the
+        samples are J2EE compliant, they will run in any servlet engine.
+        The exceptions to the previous rule of thumb are applications that illustrate
+        particular J2EE features not found in Tomcat. For example, chapter 12 features
+        Enterprise JavaBeans and uses the JBoss application server instead of Tomcat. In<br>
+    any case, the samples all run in any servlet engine or application server that
+  matches the standard J2EE architecture. </p>
+<h2>Questions, comments, suggestions, quotes?</h2>
+<p>Feel free to venture over the the author forum at <a href="http://www.manning.com/portal/">www.manning.com/portal/</a>. Or, you can visit my web site at <a href="http://www.nealford.com">www.nealford.com</a>.</p>
+</body>
+</html>

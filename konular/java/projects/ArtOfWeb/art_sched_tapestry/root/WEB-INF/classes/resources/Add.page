@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page-specification PUBLIC
+        "-//Howard Lewis Ship//Tapestry Specification 1.3//EN"
+        "http://tapestry.sf.net/dtd/Tapestry_1_3.dtd">
+
+<page-specification class="com.nealford.art.schedtapestry.page.Add">
+
+  <component id="form" type="Form">
+    <binding name="listener" expression="listeners.formSubmit"/>
+    <field-binding name="stateful" field-name="Boolean.TRUE"/>
+  </component>
+
+    <component id="startDate" type="TextField">
+        <binding name="value" expression="startDate"/>
+    </component>
+
+    <component id="eventType" type="PropertySelection">
+        <binding name="model" expression="events"/>
+        <binding name="value" expression="eventType"/>
+    </component>
+
+    <component id="duration" type="TextField">
+        <binding name="value" expression="duration"/>
+    </component>
+
+    <component id="text" type="TextField">
+        <binding name="value" expression="description"/>
+    </component>
+
+    <component id="addSubmit" type="Submit">
+        <binding name="listener" expression="listeners.formSubmit"/>
+    </component>
+
+    <!-- handle errors -->
+    <component id="foreachError" type="Foreach">
+        <binding name="source" expression="errors"/>
+        <binding name="value" expression="error"/>
+    </component>
+
+    <component id="error" type="Insert">
+        <binding name="value" expression="error"/>
+    </component>
+</page-specification>

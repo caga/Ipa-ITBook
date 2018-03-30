@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC
+        "-//Howard Lewis Ship//Tapestry Specification 1.3//EN"
+        "http://tapestry.sf.net/dtd/Tapestry_1_3.dtd">
+
+<application name="sched-tapestry"
+        engine-class="net.sf.tapestry.engine.SimpleEngine">
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="dbUrl">
+        jdbc:mysql://localhost/schedule
+    </property>
+    <property name="user">root</property>
+    <property name="password">marathon</property>
+
+    <page name="Home" specification-path="/resources/Home.page"/>
+    <page name="Add"  specification-path="/resources/Add.page" />
+
+    <component-alias type="SchedTable"
+            specification-path="/resources/SchedTable.jwc"/>
+    <library id="contrib"
+    specification-path="/net/sf/tapestry/contrib/Contrib.library"/>
+
+</application>

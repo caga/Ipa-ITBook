@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>tapestry</fullname>
+  <class>
+    <path>[lib/tapestry/net.sf.tapestry.contrib-2.2.jar]</path>
+    <path>[lib/tapestry/net.sf.tapestry-2.2.jar]</path>
+    <path>[lib/tapestry/mckoidb.jar]</path>
+    <path>[lib/tapestry/log4j-1.2.6.jar]</path>
+    <path>[lib/tapestry/org.apache.crimson.jar]</path>
+    <path>[lib/tapestry/jfreechart-0.9.2.jar]</path>
+    <path>[lib/tapestry/ognl-2.1.4-opt.jar]</path>
+    <path>[lib/tapestry/javax.xml.jaxp.jar]</path>
+    <path>[lib/tapestry/jcommon-0.6.4.jar]</path>
+    <path>[lib/tapestry/jakarta-oro-2.0.6.jar]</path>
+    <path>[lib/tapestry/ejb.jar]</path>
+    <path>[lib/tapestry/org.mortbay.jetty-jdk1.2.jar]</path>
+    <path>[lib/tapestry/javax.servlet.jar]</path>
+  </class>
+  <lastmodsaved>1067613391219</lastmodsaved>
+</library>
